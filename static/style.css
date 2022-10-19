@@ -12,7 +12,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   color:aquamarine;
-  background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url(/assets/img/back8.png);
+  background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url(/Portafolio/assets/img/back8.png);
   background-position: center;
   background-size: cover;
   overflow-x:hidden; 
