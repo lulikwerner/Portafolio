@@ -365,10 +365,9 @@ color:#fff;
 }
 .project-cont h1{
   display: flex;
-  justify-content:center;
-  width:100%;
+  width:80%;
   margin-top: 20px;
-  margin-right: 80%;
+  margin-left: 30%;
   font-weight: 400;
   font-size: 30PX;
   color: #AB3EA6;
@@ -378,16 +377,16 @@ color:#fff;
   flex-direction: row;
   flex-wrap: none;
   width:100%;
-  margin: 50px 40px 20px 30px;
+  margin: 15px 5px 20px 5px;
   font-weight: 100;
   list-style: none; 
-  border-radius: 30px;
+  border-radius: 28px;
   box-shadow: 1px 0.5px 0.5px 1px rgba(79,209,197,.64);
 }
 .project-cont ul li{
   display: flex;
   justify-content:center; 
-  margin: 20px 30px 20px 90px;
+  margin: 20px 40px 20px 40px;
   font-weight: 100;
   font-size: 20PX;
   color: white; 
@@ -396,28 +395,58 @@ color:#fff;
 ul li:hover{
   color: #AB3EA6;
 }
-.img-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;  
-  height: 200vh;
-  margin-top: 1%;
- 
+[type=radio]{
+  display: none;
 }
-/*Recordatorio asi le doy el mismo tamanio a todas las fotos*/
-.img-container div img{
-  width: 80%;
-  height: 30vh;
+#slider{
+  height: 35vw;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
-.img-container div h4{
-  display: flex;
-  margin-top: -70%;
-  margin-left: 5vh;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  color: #AB3EA6;
+#slider label{
+  margin: auto;
+  width: 40%;
+  height: 75%;
+  border-radius: 4px;
+  position: absolute;
+  left:0;
+  right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3{
+  box-shadow:0 1px 4px 0 rgba(0,0,0,.37);
+  transform:translate3d(-30%,0%,-200px);
+}
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4{
+  box-shadow:0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform:translate3d(-15%,0%,-100px);
+}
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide2, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5{
+  box-shadow:0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform:translate3d(0,0,0);
+}
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide3, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1{
+  box-shadow:0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px rgba(0,0,0,.2);
+  transform:translate3d(15%,0,-100px);
+}
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2{
+  box-shadow:0 1px 4px 0 rgba(0,0,0,.37);
+  transform:translate3d(30%,0%,-200px);
+}
+
+
 
 /*Services*/
 .services-cont{
