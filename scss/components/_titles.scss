@@ -1,0 +1,57 @@
+/*Index titles*/
+.title{
+    grid-area: title;
+    width: 90%;
+    margin-top: 3%;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+/*Contact Form*titles*/
+.copy{
+    grid-area: title;
+    margin-top: 12%;
+    margin-left: 15%;
+  }
+/*Portafolio titles*/
+.project-cont{
+
+h1{
+    display: flex;
+    justify-content:center;
+    width:100%;
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 30PX;
+    color: $thirdcolor;
+  } 
+}
+/*About titles*/
+.title2{
+    grid-area: title2;
+    text-align: center;
+    height: relative;
+    width:100%;
+    margin-top: 3%;
+    font-weight: 200;
+    font-size: 30PX;  
+  }  
+  .name{
+    grid-area: name;
+    text-align: center;
+    width:100%;
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 50PX;
+    color:$principal;
+  }
+  .motus{
+    grid-area: motus;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-top: 1%;
+    font-weight: 200;
+    font-size: 20PX;
+    color: $thirdcolor;
+  }

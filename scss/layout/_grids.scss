@@ -1,0 +1,64 @@
+/*Index Grids*/
+.content{
+    display: grid;
+    grid-template-areas: "title   photo"
+                         "legend  photo"
+                         "button  photo";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 180px 150px 60px;
+    width: 80%;
+    margin-left: 2%;
+    padding: 5%;
+    color: $solidcolor;
+    font-family: 'Montserrat', sans-serif;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 1.6s;
+    visibility: hidden;
+  }
+  @keyframes slideleft {
+  0%{
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translatex(0);
+    visibility: visible;
+  }
+  }
+  /*Contact Form Grids*/
+  .split-screen{
+    display: grid;
+    grid-template-areas: "title contact2"
+                          "info3 contact2";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 80%;
+    margin-top:3%; 
+    margin-left:10%;
+    height: 60vh;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    border: 1px solid $solidcolor;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 12px 12px 24px 2px $shadow;
+    animation: zoomin 1s linear 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    visibility: hidden ;
+  }
+  /*About Grids*/
+  .about-abt{
+    display: grid;
+    grid-template-areas: "picture   title2"
+                         "picture   name"
+                         "picture   motus"
+                         "picture   description"
+                         "picture   butt";
+    grid-template-columns:  1fr 2fr;
+    grid-template-rows: repeat(3, 10%) 30% 20%;
+    height: 90vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: $solidcolor;
+    animation: moveright 4s linear ;
+  }  

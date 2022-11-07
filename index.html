@@ -1,57 +1,73 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" href="./assets/img/unicorn.png">
-    <link rel="stylesheet" href="./static/style.css">
+    <link rel="icon" href="./assets/img/unicorn.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Jura:wght@300&family=Montserrat:wght@100;200&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/main.css">
 </head>
 
 <body>
     <div class="bar">
         <header>
-        <nav>
-            <a href=".." class="logo">
-                <img href="#" src="./assets/img/logo2.png" alt="Unicorn logo">
-            </a>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./my_portafolio/about.html">About</a></li>
-                <li><a href="./my_portafolio/portafolio.html">Portafolio</a></li>
-                <li><a href="./my_portafolio/services.html">Services</a></li>
-                <li><a href="./my_portafolio/contact_form.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="index.html" class="logo"><img href="#" src="./assets/img/logo2.png"
+                                alt="Unicorn logo"></li></a>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./my_portafolio/about.html">About</a></li>
+                        <li><a href="./my_portafolio/portafolio.html">Portafolio</a></li>
+                        <li><a href="./my_portafolio/services.html">Services</a></li>
+                        <li><a href="./my_portafolio/contact_form.html">Contact</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
         </header>
-        <main class="content">
-        <section>
-            <h1 class="title">Let's Build something together</h1>
-            <p class="legend">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit assumenda neque vero
-                nemo, ab beatae laudantium ullam porro est deleniti consectetur, rerum delectus recusandae soluta,
-                quaerat veritatis corrupti! At..</p>
-            <div class="wrap">
-                <!--Dirijir el boton MY PROYECTS a la parte especifica del html-->
-                <a href="./my_portafolio/portafolio.html#portafolio" class="btn" class="slide-left">MY PROJECTS</a>
-            </div>
-        </section>
-        <section class="profile">
-            <img href="./my_portafolio/about.html" src="./assets/img/avatar.png" width="30%" height="60%" alt="avatar of a girl">
-        </section>
-    </main>
+        <main>
+            <section>
+                <div class="content">
+                    <h1 class="title">Let's Build something together</h1>
+                    <div class="profile">
+                        <img href="./my_portafolio/about.html" src="./assets/img/avatar.png"
+                            alt="avatar of a girl">
+                    </div>
+                    <p class="legend">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit
+                        assumenda neque vero
+                        nemo, ab beatae laudantium ullam porro est deleniti consectetur, rerum delectus recusandae
+                        soluta,
+                        quaerat veritatis corrupti! At..</p>
+                    <div class="wrap">
+                        <!--Dirijir el boton MY PROYECTS a la parte especifica del html-->
+                        <a href="./my_portafolio/portafolio.html#portafolio" class="btn" class="slide-left">MY
+                            PROJECTS</a>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer>
             <div>
                 <img href="#" src="./assets/img/linkedin.png" alt="Linkedin logo">
                 <img href="#" src="./assets/img/github.png" alt="Linkedin github">
                 <img href="#" src="./assets/img/instagram.png" alt="Linkedin instagram">
             </div>
-        </footer>
     </div>
+    </footer>
+
 </body>
 
 </html>

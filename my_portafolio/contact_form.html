@@ -4,73 +4,74 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="icon" href="../assets/img/unicorn.png">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="../assets/img/unicorn.svg">
+    <link rel="stylesheet" href="../scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="bar">
         <header>
-        <nav>
-            <a href="../index.html" class="logo">
-                <img href="#" src="../assets/img/logo2.png" alt="Unicorn logo">
-            </a>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../my_portafolio/about.html">About</a></li>
-                <li><a href="../my_portafolio/portafolio.html">Portafolio</a></li>
-                <li><a href="../my_portafolio/services.html">Services</a></li>
-                <li><a href="../my_portafolio/contact_form.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-     
-            <section class="split-screen">
-                <div>
-                    <h1 class="copy">Let's Work together </h1>
-                    <p class="info">Lorem ipsum dolor sit amet, consectetur
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="/PreEntrega2-Werner/index.html" class="logo"><img href="#"
+                                src="../assets/img/logo2.png" alt="Unicorn logo"></li></a>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../my_portafolio/about.html">About</a></li>
+                        <li><a href="../my_portafolio/portafolio.html">Portafolio</a></li>
+                        <li><a href="../my_portafolio/services.html">Services</a></li>
+                        <li><a href="../my_portafolio/contact_form.html">Contact</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+        </header>
+        <main class="dbox">
+            <div class="split-screen">
+                <h1 class="copy">Let's Work together </h1>
+                <div class="wrapper">
+                    <p>Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Nemo atque aspernatur vero
                         molestiae incidunt quasi repellat necessitatibus
                         at architecto. Repellat libero consequatur velit
                         vero voluptatibus fugit, quidem labore delectus.
                         Quae!</p>
                 </div>
-               
-                    <form class="info1">
-                        <section>
-                            <div >
-                                <label class="input1" >Enter your Name</label>
-                                <input  class="box1" type="text" name="username" required="">
-                            </div>
-                            <div class="input2">
-                                <label>Email address</label>
-                                <input class="box2" type="text" name="email" required="">
-
-                            </div>
-                            <div class="input3">
-                                <label >Subject</label>
-                                <input class="box3" type="text" name="subject" required="">
-                            </div>
-                            <div class="input4">
-                                <label for="name">Write me a message</label>
-                                <input class="box4" id="comments" name="comments" type="text">
-                            </div>
-                        </section>
-                        <div class="wrap2">
-                            <a class="btn2" class="slide-left" href="#">SEND</a>
+                <div class="contact">
+                    <form>
+                        <div class="box1">
+                            <label> Enter your Name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="box2">
+                            <label> Email Address</label>
+                            <input type="text" name="ename">
+                        </div>
+                        <div class="box3">
+                            <label>Subject</label>
+                            <input type="text" name="sname">
+                        </div>
+                        <div class="box4">
+                            <label> Write a message</label>
+                            <textarea name="message" rows="5"></textarea>
+                        </div>
+                        <div class="wrap4">
+                            <a href="" class="btn2" class="slide-left">SEND</a>
                         </div>
                     </form>
-             
-            </section>
-       
-    </main>
+                </div>
+        </main>
         <footer>
             <div>
-                <img href="#" src="../assets/img/linkedin.png"  alt="Linkedin logo">
+                <img href="#" src="../assets/img/linkedin.png" alt="Linkedin logo">
                 <img href="#" src="../assets/img/github.png" alt="Linkedin github">
                 <img href="#" src="../assets/img/instagram.png" alt="Linkedin instagram">
             </div>

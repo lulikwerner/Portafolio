@@ -1,0 +1,98 @@
+/*Index text*/
+.legend{
+    grid-area:legend;
+    margin-top: 0%;
+    width: 500px;
+    line-height: 28px;
+  }
+/*Contact Form*/
+.wrapper{
+    grid-area: info3;
+    text-align: left;
+    width: 75%; 
+    margin-top: 8%;
+    margin-left: 15%;
+    font-weight: 200;
+    line-height: 30px;
+  }
+  .contact{
+    grid-area: contact2;
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+  
+  .box1 input{
+    height: 5vh;
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    color: $solidcolor;
+    border: none;
+    border-bottom: 1px solid $solidcolor;
+    outline: none;
+    background: transparent;  
+  }
+
+  .box2{
+
+   label{
+    margin-top: 4%;
+  }
+  input{
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    color: $solidcolor;
+    border: none;
+    border-bottom: 1px solid $solidcolor;
+    outline: none;
+    background: transparent;
+  }
+}
+  
+  .box3 {
+    label{
+    margin-top: 6%;
+  }
+input{
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    color: $solidcolor;
+    border: none;
+    border-bottom: 1px solid $solidcolor;
+    outline: none;
+    background: transparent;
+  }
+}
+  
+  .box4{
+
+  label{
+    margin-top: 8%;
+  }
+  textarea{
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    color: $solidcolor;
+    border: none;
+    border-bottom: 1px solid $solidcolor;
+    outline: none;
+    background: transparent;
+  }
+}
+/*About text*/
+.description{
+    grid-area: description;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 20px;
+    line-height: 40px;
+    color: $solidcolor;
+  }
