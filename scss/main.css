@@ -469,7 +469,7 @@ footer div img {
   padding-left: 15%;
 }
 .picture img {
-  height: 80%;
+  height: 90%;
   width: 100%;
   border-radius: 50%;
 }
@@ -729,7 +729,7 @@ footer div img {
 /*Index titles*/
 .title {
   grid-area: title;
-  width: 90%;
+  width: 100%;
   margin-top: 3%;
   font-size: 50px;
   line-height: 50px;
