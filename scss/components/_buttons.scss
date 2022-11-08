@@ -3,9 +3,8 @@
     grid-area: button;
     display: inline-block;
     position: relative;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 20%;
-  
   .btn{
     display: flex;
     justify-content: center;
@@ -15,6 +14,8 @@
     text-decoration: none; 
     width:60%;
     color:$solidcolor;
+    font-size: 1em;
+   
  &:hover{
     color: $thirdcolor;
     border: 1px solid $thirdcolor;

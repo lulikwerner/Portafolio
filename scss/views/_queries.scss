@@ -9,32 +9,36 @@
     /*Index 1024 Query*/
     .content {
         margin-left: 5%;
-        grid-template-rows: 120px 150px 60px;
+        grid-template-rows: 100px 150px 60px;
     }
 
     .title {
-        font-size: 30px;
+        font-size: 2em;
     }
 
     .legend {
-        font-size: 16px;
+      margin-top: 0%;
+        font-size: 1em;
     }
 
     .profile {
 
         margin-top: 3%;
-        margin-left: 50%;
-
+        margin-left: 10%;
+    
         img {
-            width: 100%;
+          max-height: 70%;
+          max-width: auto;
+        
         }
     }
-
+.wrap{
+  grid-area: button;
     .btn {
-        grid-area: button;
-        font-size: 16px;
+        font-size: 0.9em;
         width: 55%;
     }
+  }
     /*Footer 1024 Query*/
     footer{
         div{
@@ -141,65 +145,59 @@ textarea{
         }
     }
 
+
 /*Index 850 Query*/
-    .content {
-        display: grid;
-        height: 130vh;
-        width: 100%;
-        margin-left: 2%;
-        grid-template-areas: "title"
-            "photo"
-            "legend"
-            "button";
-        grid-template-columns: 2fr;
-        grid-template-rows: 10% 40% 25% 30%;
-    }
+.content {
+  display: grid;
+  height: 130vh;
+  width: 90%;
+  margin-left: 2%;
+  grid-template-areas: "title"
+      "photo"
+      "legend"
+      "button";
+  grid-template-columns: 2fr;
+  grid-template-rows: 10% 40% 25% 30%;
+}
 
-    .title {
-        grid-area: title;
-        margin-left: 20%;
-        font-size: 29px;
-    }
+.title {
+  grid-area: title;
+  text-align: center;
+  font-size:2em;
+}
 
-    .profile {
-        grid-area: photo;
-        height: 100%;
-        margin-top: 2%;
-        margin-left: 30%;
+.profile {
+  grid-area: photo;
+  max-height: 100%;
+  margin-top: 8%;
+  margin-left: 37%;
 
-        img {
-            grid-area: photo;
-    
-            border-radius: 50%;
-            width: 40%;
-            height: 90%;
-        }
-    }
-
-    .legend {
-        grid-area: legend;
-        text-align: center;
-        width: 80%;
-        margin-top: 3%;
-        margin-left: 10%;
-        font-size: 18px;
-        line-height: 35px;
-    }
-
-    .wrap {
-        grid-area: button;
-        width: 100%;
-        margin-top: 4%;
-        margin-left: -20%;
-        
-       
+  img {
   
+      border-radius: 50%;
+      max-width: 30%;
+      height: 90%;
+  }
+}
 
-    .btn {
-        margin-left: -20%;
-      
-      
-    }
+.legend {
+  grid-area: legend;
+  text-align: center;
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 10%;
+  font-size: 1.2em;
+  line-height: 35px;
+}
+
+.wrap {
+  grid-area: button;
+.btn {
+  display: absolute;
+  width: 70%;
+  margin-top: 4%;
+  margin-left: -20%;
+}
 }
      /*Footer 850 Query*/
      footer{
@@ -228,7 +226,7 @@ textarea{
   }
   .split-screen{
     display: grid;
-    grid-template-areas: "title"
+    grid-template-areas: "titlec"
                           "info3"
                           "contact2"
                           "butt2";
@@ -237,10 +235,10 @@ textarea{
     height: 90vh;
   }   
   .copy{
-    grid-area: title;
+    grid-area: titlec;
     justify-content: center;
     font-size:1.2em;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 30%;
   }
   .wrapper{ 
@@ -397,7 +395,7 @@ div{
 
 }
 
-/*Index 683 Query*/
+/*Menu 683 Query*/
 @media(max-width:683px) {
  
     .menu {
@@ -434,6 +432,28 @@ div{
     #check:checked~.menu {
         right: 0;
     }
+/*Index 683 Query*/
+
+.title {
+  font-size: 1.5em;
+} 
+.profile {  
+  margin-top: 8%;
+  margin-left: 30%;
+  img{
+    max-width: 50%;
+  }
+}
+.legend {
+  font-size: 1.1em;
+}
+.wrap {
+  grid-area: button;
+.btn {
+text-align: center;
+font-size: 0.9em;
+}
+}
 }
 
 @media(max-width:550px){
@@ -443,41 +463,35 @@ div{
         width: 70%;
         height: 120vh;
         margin-left: 12%;
-        grid-column: 1fr;
+
         grid-template-rows: 15% 40% 35% 15%;
     }
 
     .title {
         text-align: center;
         margin-top: 6%;
-        margin-left: 12%;
-        font-size: 26px;
+        font-size: 1.2em;
     }
 
     .profile {
-        margin-top: 8%;
+        margin-top: 10%;
         margin-left: 23%;
         img {
-          
-         
+    
             height: 80%;
-            width: 60%;
+            max-width: 60%;
         }
     }
 
     .legend {
-        width: 100%;
-        margin-top: 3%;
-        margin-left: 5%;
-        font-size: 15px;
-        line-height: 30px;
+        font-size: 0.8em;
+        margin-top: 5%;
     }
-
     .wrap {
-        width: 100%;
-        margin-top: -5%;
-        margin-left: 42%; 
-        text-align: center;
+      font-size: 0.8em;
+        width: 90%;
+       
+   
 
         }
       /*Footer 550 Query*/  
@@ -643,6 +657,7 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
 
 
 @media(max-width:400px){
+  /*About 400 Query*/
   .about-abt{
     height: 80vh;
     grid-template-rows: 5% 5% 5% 30% 25% 10%;
@@ -667,41 +682,37 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
   .wrap-abt a{
   font-size: 8px;
   } 
-}
-
-
-
-
-@media(max-width:400px) {
 
     /*Index 400 Query*/
     .content {
         height: 100vh;
         width: 100%;
-        margin-left: 1%;
-        grid-template-rows: 12% 40% 35% 10%;
+        margin-left: 0%;
+        grid-template-rows: 12% 40% 30% 10%;
     }
 
     .title {
-        margin-left: 5%;
-        text-align: center;
-        font-size: 20px;
+        margin-left: 2%;
+        align-items: center;
+        font-size: 1.2em;
     }
 
     .profile {
-        margin-top: 0%;
-        margin-left:20%;
+     
+        margin-top: 15%;
+        margin-left: 25%;
+        
+    
         img {
-           
           
-            height: 100%;
-            width: 60%;
+            height: 90%;
+         max-width: 60%;
         }
     }
 
     .legend {
         width: 90%;
-        margin-top: 12%;
+        margin-top: 10%;
         margin-left: 4%;
         font-size: 12px;
         line-height: 20px;
@@ -709,13 +720,13 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
 
     .wrap {
         margin-top: 0%;
-        margin-left: 28%;
-        width: 100%;
-   
+        margin-left: 25%;
+       object-position: center;
+        width: 80%;
 
     .btn {
-        width: 80%;
-        font-size: 10px;
+        width: 100%;
+        font-size: .7em;
 
     }
 }

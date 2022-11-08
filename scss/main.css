@@ -67,7 +67,6 @@ footer {
   width: 70%;
   margin-left: 1%;
   padding-top: 5px;
-  font-size: 14px;
 }
 
 .box2 {
@@ -77,7 +76,6 @@ footer {
   width: 70%;
   margin-left: 1%;
   padding-top: 20px;
-  font-size: 14px;
 }
 
 .box3 {
@@ -87,7 +85,6 @@ footer {
   width: 70%;
   margin-left: 1%;
   padding-top: 40px;
-  font-size: 14px;
 }
 
 .box4 {
@@ -97,7 +94,6 @@ footer {
   width: 70%;
   margin-left: 1%;
   padding-top: 60px;
-  font-size: 14px;
 }
 
 /*Portafolio*/
@@ -115,9 +111,9 @@ footer {
 /*Index Grids*/
 .content {
   display: grid;
-  grid-template-areas: "title   photo" "legend  photo" "button  photo";
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 180px 150px 60px;
+  grid-template-areas: "title   photos" "legend  photos" "button  photos";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 180px 140px 60px;
   width: 80%;
   margin-left: 2%;
   padding: 5%;
@@ -258,7 +254,7 @@ footer {
   grid-area: button;
   display: inline-block;
   position: relative;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 20%;
 }
 .wrap .btn {
@@ -270,6 +266,7 @@ footer {
   text-decoration: none;
   width: 60%;
   color: #fff;
+  font-size: 1em;
 }
 .wrap .btn:hover {
   color: #AB3EA6;
@@ -387,15 +384,16 @@ footer {
 }
 /*Index image*/
 .profile {
-  grid-area: photo;
+  grid-area: photos;
+  margin-top: 0%;
+  margin-left: 30%;
+  margin-right: 30%;
   height: 100%;
   width: 100%;
-  margin-top: 0%;
-  margin-left: 50%;
 }
 .profile img {
-  height: 80%;
-  width: 60%;
+  max-height: 80%;
+  max-width: auto;
   border-radius: 50%;
   box-shadow: 12px 12px 24px 2px rgba(79, 209, 197, 0.64);
   -webkit-animation: zoomin 1s linear 1s;
@@ -638,6 +636,7 @@ footer div img {
   margin-top: 0%;
   width: 500px;
   line-height: 28px;
+  font-size: 1.3em;
 }
 
 /*Contact Form*/
@@ -732,7 +731,7 @@ footer div img {
   grid-area: title;
   width: 100%;
   margin-top: 3%;
-  font-size: 50px;
+  font-size: 3em;
   line-height: 50px;
 }
 
@@ -796,24 +795,28 @@ footer div img {
   /*Index 1024 Query*/
   .content {
     margin-left: 5%;
-    grid-template-rows: 120px 150px 60px;
+    grid-template-rows: 100px 150px 60px;
   }
   .title {
-    font-size: 30px;
+    font-size: 2em;
   }
   .legend {
-    font-size: 16px;
+    margin-top: 0%;
+    font-size: 1em;
   }
   .profile {
     margin-top: 3%;
-    margin-left: 50%;
+    margin-left: 10%;
   }
   .profile img {
-    width: 100%;
+    max-height: 70%;
+    max-width: auto;
   }
-  .btn {
+  .wrap {
     grid-area: button;
-    font-size: 16px;
+  }
+  .wrap .btn {
+    font-size: 0.9em;
     width: 55%;
   }
   /*Footer 1024 Query*/
@@ -901,7 +904,7 @@ footer div img {
   .content {
     display: grid;
     height: 130vh;
-    width: 100%;
+    width: 90%;
     margin-left: 2%;
     grid-template-areas: "title" "photo" "legend" "button";
     grid-template-columns: 2fr;
@@ -909,19 +912,18 @@ footer div img {
   }
   .title {
     grid-area: title;
-    margin-left: 20%;
-    font-size: 29px;
+    text-align: center;
+    font-size: 2em;
   }
   .profile {
     grid-area: photo;
-    height: 100%;
-    margin-top: 2%;
-    margin-left: 30%;
+    max-height: 100%;
+    margin-top: 8%;
+    margin-left: 37%;
   }
   .profile img {
-    grid-area: photo;
     border-radius: 50%;
-    width: 40%;
+    max-width: 30%;
     height: 90%;
   }
   .legend {
@@ -930,16 +932,16 @@ footer div img {
     width: 80%;
     margin-top: 3%;
     margin-left: 10%;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 35px;
   }
   .wrap {
     grid-area: button;
-    width: 100%;
-    margin-top: 4%;
-    margin-left: -20%;
   }
   .wrap .btn {
+    display: absolute;
+    width: 70%;
+    margin-top: 4%;
     margin-left: -20%;
   }
   /*Footer 850 Query*/
@@ -962,16 +964,16 @@ footer div img {
   }
   .split-screen {
     display: grid;
-    grid-template-areas: "title" "info3" "contact2" "butt2";
+    grid-template-areas: "titlec" "info3" "contact2" "butt2";
     grid-template-columns: 1fr;
     grid-template-rows: 10% 30% 50% 10%;
     height: 90vh;
   }
   .copy {
-    grid-area: title;
+    grid-area: titlec;
     justify-content: center;
     font-size: 1.2em;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 30%;
   }
   .wrapper {
@@ -1107,7 +1109,7 @@ footer div img {
     margin-left: 40%;
   }
 }
-/*Index 683 Query*/
+/*Menu 683 Query*/
 @media (max-width: 683px) {
   .menu {
     flex-direction: column;
@@ -1135,6 +1137,27 @@ footer div img {
   #check:checked ~ .menu {
     right: 0;
   }
+  /*Index 683 Query*/
+  .title {
+    font-size: 1.5em;
+  }
+  .profile {
+    margin-top: 8%;
+    margin-left: 30%;
+  }
+  .profile img {
+    max-width: 50%;
+  }
+  .legend {
+    font-size: 1.1em;
+  }
+  .wrap {
+    grid-area: button;
+  }
+  .wrap .btn {
+    text-align: center;
+    font-size: 0.9em;
+  }
 }
 @media (max-width: 550px) {
   /*Index 550 Query*/
@@ -1142,35 +1165,28 @@ footer div img {
     width: 70%;
     height: 120vh;
     margin-left: 12%;
-    grid-column: 1fr;
     grid-template-rows: 15% 40% 35% 15%;
   }
   .title {
     text-align: center;
     margin-top: 6%;
-    margin-left: 12%;
-    font-size: 26px;
+    font-size: 1.2em;
   }
   .profile {
-    margin-top: 8%;
+    margin-top: 10%;
     margin-left: 23%;
   }
   .profile img {
     height: 80%;
-    width: 60%;
+    max-width: 60%;
   }
   .legend {
-    width: 100%;
-    margin-top: 3%;
-    margin-left: 5%;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 0.8em;
+    margin-top: 5%;
   }
   .wrap {
-    width: 100%;
-    margin-top: -5%;
-    margin-left: 42%;
-    text-align: center;
+    font-size: 0.8em;
+    width: 90%;
   }
   /*Footer 550 Query*/
   footer div img {
@@ -1313,6 +1329,7 @@ footer div img {
   }
 }
 @media (max-width: 400px) {
+  /*About 400 Query*/
   .about-abt {
     height: 80vh;
     grid-template-rows: 5% 5% 5% 30% 25% 10%;
@@ -1337,43 +1354,43 @@ footer div img {
   .wrap-abt a {
     font-size: 8px;
   }
-}
-@media (max-width: 400px) {
   /*Index 400 Query*/
   .content {
     height: 100vh;
     width: 100%;
-    margin-left: 1%;
-    grid-template-rows: 12% 40% 35% 10%;
+    margin-left: 0%;
+    grid-template-rows: 12% 40% 30% 10%;
   }
   .title {
-    margin-left: 5%;
-    text-align: center;
-    font-size: 20px;
+    margin-left: 2%;
+    align-items: center;
+    font-size: 1.2em;
   }
   .profile {
-    margin-top: 0%;
-    margin-left: 20%;
+    margin-top: 15%;
+    margin-left: 25%;
   }
   .profile img {
-    height: 100%;
-    width: 60%;
+    height: 90%;
+    max-width: 60%;
   }
   .legend {
     width: 90%;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 4%;
     font-size: 12px;
     line-height: 20px;
   }
   .wrap {
     margin-top: 0%;
-    margin-left: 28%;
-    width: 100%;
+    margin-left: 25%;
+    -o-object-position: center;
+       object-position: center;
+    width: 80%;
   }
   .wrap .btn {
-    width: 80%;
-    font-size: 10px;
+    width: 100%;
+    font-size: 0.7em;
   }
   /*Contact Form 400 Query*/
   .split-screen {
