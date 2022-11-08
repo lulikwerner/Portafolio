@@ -47,18 +47,18 @@
 /*Contact Form 1024 Query*/
 .copy{
     height: 100%;
-    padding-top: 1%;
+    padding-top: 5%;
     margin-left: 15%;
-    font-size:3vh;
+    font-size:1.5em;
   }
   .wrapper{
     text-align: left;
-    font-size: 15px;
+    font-size: 0.8em;
     margin-top: 1%;
     padding-top: 6%;
   }
   .contact{
-    margin-top: 17%;
+    margin-top: 12%;
     font-size:x-small;
     font-weight: 100;
   }
@@ -239,7 +239,7 @@ textarea{
   .copy{
     grid-area: title;
     justify-content: center;
-    font-size:3vh;
+    font-size:1.2em;
     margin-top: 5%;
     margin-left: 30%;
   }
@@ -247,36 +247,43 @@ textarea{
     grid-area: info3;
     margin-top: 1%;
     line-height: 20px;
+    font-size: 0.75em;
   }
   .contact{
     grid-area: contact2;
-    margin-top: 5%; 
+    margin-top: 1%; 
     margin-left: 20%;
+  
   }
   .box1{
      label{
     margin-top: 1%;
+    font-size: 0.85em;
   }
 }
   .box2{
      label{
     margin-top: 3%;
+    font-size: 0.85em;
   }
 }
   .box3 {
     label{
     margin-top: 5%;
+    font-size: 0.85em;
   }
 }
   .box4 {
     label{
     margin-top: 3%;
+    font-size: 0.85em;
   }
 }
   .wrap4{ 
     grid-area: butt2;
     margin-top: 10%;
     margin-left: 20%;
+    
   }
 
 /*Portafolio 850 Query*/
@@ -494,6 +501,7 @@ div{
     margin-left: 10%;
   }
   .wrapper{
+    margin-left: 15%;
     line-height: 15px;
     line-height: 20px;
   }
@@ -502,37 +510,39 @@ div{
   }
   .box1{
     margin-top: 10%;
-    font-size: 12px;
+    font-size: 1.2em;
   
     input{
     font-size: small;
   }
 }
   .box2{
-    font-size: 12px;
+    font-size: 1.2em;
 
 input{
     font-size: small;
   }
 }
   .box3{
-    font-size: 12px;
+    font-size: 1.2em;
     input{
     font-size: small;
     }
 }
   .box4{
-    font-size: 12px;
+    font-size: 1.2em;
 textarea{
     font-size: small;
   }
 }
   .wrap4{ 
     margin-left: 10%;
+    
   }
   .btn2{
     font-size: 10px;
     width: 100%;
+    font-size: 0.75em;
   }
 /*Portafolio 550 Query*/
 
@@ -710,34 +720,39 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
     }
 }
 /*Contact Form 400 Query*/
+
 .split-screen{
-    height: 80vh;
+    height: 90vh;
     grid-template-rows: 10% 20% 55% 15%;
   }
   .copy{
     margin-top: 8%;  
     margin-left: 3%;
-    font-size: 15px;
+    font-size: 1em;
     width: 100%;
   }
   .wrapper{
   
-    font-size: 10px;
+    font-size: 0.2em;
     margin-left: 10%;
     width: 85%;
   }
   .contact{
-    margin-top: 15%;
+    margin-top: 20%;
     height:10%;
   }
   .box1{
     padding-top: 0%;
+    font-size: 0.2em;
+  
   }
   .box2{
     padding-top: 5%;
+    font-size: 0.2em;
   }
   .box3{
     padding-top: 8%;
+    font-size: 0.2em;
   }
   .box3{
      label{
@@ -746,10 +761,12 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
 }
   .box4{
     padding-top: 12%;
+    font-size: 0.2em;
   }
   .box4{
     label{
         margin-top: 10%;
+        font-size: 0.2em;
   }
 
     textarea{
