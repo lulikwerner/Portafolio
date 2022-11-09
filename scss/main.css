@@ -103,7 +103,6 @@ footer {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-  font-size: large;
   -webkit-animation: moveright 1s linear 1;
           animation: moveright 1s linear 1;
 }
@@ -288,7 +287,7 @@ footer {
 /*Contact Form Button*/
 .wrap4 {
   margin-top: 10%;
-  margin-left: 40%;
+  margin-left: 20%;
   margin-right: 60%;
 }
 
@@ -572,7 +571,7 @@ footer div img {
   justify-content: center;
   margin: 20px 50px 20px 90px;
   font-weight: 100;
-  font-size: 20PX;
+  font-size: 1.2em;
   color: #fff;
   list-style: none;
 }
@@ -646,11 +645,11 @@ footer div img {
   grid-area: info3;
   text-align: left;
   width: 75%;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-left: 15%;
   font-weight: 200;
   font-size: 0.9em;
-  line-height: 2.5em;
+  line-height: 2.1em;
 }
 
 .contact {
@@ -753,7 +752,7 @@ footer div img {
   width: 100%;
   margin-top: 0px;
   font-weight: 400;
-  font-size: 30PX;
+  font-size: 1.8em;
   color: #AB3EA6;
 }
 
@@ -881,15 +880,16 @@ footer div img {
   }
   .project-cont ul li {
     margin-left: 3%;
-    font-size: 15PX;
+    font-size: 1em;
   }
   .project-cont h1 {
     margin-left: 3%;
-    font-size: 25PX;
+    font-size: 1.5em;
   }
   #slider {
     height: 50vh;
-    margin-left: -6%;
+    margin-top: -3%;
+    margin-left: -3%;
   }
   /*About 1024 Query*/
   .title2 {
@@ -1043,16 +1043,18 @@ footer div img {
   .project-cont h1 {
     margin-top: 3%;
     margin-left: 0%;
-    font-size: 20PX;
+    font-size: 1.4em;
   }
   .project-cont ul {
     width: 110%;
     margin-left: 0%;
+    font-size: 0.9em;
   }
   #slider {
     height: 50vh;
     width: 90%;
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 2%;
     transition: 1s ease-in-out;
   }
   #slider:hover {
@@ -1284,8 +1286,8 @@ footer div img {
   }
   /*Portafolio 550 Query*/
   .project-cont {
-    height: 8vh;
-    font-size: 15px;
+    height: 6vh;
+    font-size: 0.8em;
     margin-top: -5%;
   }
   .project-cont ul {
@@ -1296,15 +1298,15 @@ footer div img {
   .project-cont ul li {
     margin-top: 8%;
     margin-left: 3%;
-    font-size: 12PX;
+    font-size: 0.9em;
   }
   .project-cont h1 {
     margin-top: 10%;
     margin-left: 0%;
-    font-size: 20PX;
+    font-size: 1.4em;
   }
   #slider {
-    margin-top: 30%;
+    margin-top: 32%;
     margin-left: -5%;
     height: 50%;
     width: 100%;
@@ -1505,15 +1507,18 @@ footer div img {
     margin-left: 6%;
   }
   .project-cont ul li {
-    font-size: 12px;
+    font-size: 0.8em;
     margin-top: 8%;
     margin-left: 2%;
     text-align: center;
   }
+  .project-cont ul h1 {
+    font-size: 1.4em;
+  }
   #slider {
-    height: 50vh;
+    height: 45vh;
     width: 130%;
-    margin-top: 24%;
+    margin-top: 20%;
     margin-left: -20%;
   }
   #slider:hover {

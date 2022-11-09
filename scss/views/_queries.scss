@@ -39,8 +39,8 @@
         width: 55%;
     }
   }
-    /*Footer 1024 Query*/
-    footer{
+/*Footer 1024 Query*/
+footer{
         div{
          img{
         width: 55px;
@@ -55,12 +55,12 @@
     margin-left: 15%;
     font-size:1.5em;
   }
-  .wrapper{
+.wrapper{
     text-align: left;
     font-size: 0.8em;
     margin-top: 1%;
     padding-top: 6%;
-  }
+}
   .contact{
     margin-top: 12%;
     font-size:x-small;
@@ -102,25 +102,25 @@ textarea{
 
 /*Portafolio 1024 Query*/
 .project-cont{
-    margin-left: -5%;
-    height: 30vh;
-   ul {
-        width:110%;
-        margin-left: 2%;    
-      
+  margin-left: -5%;
+  height: 30vh;
+  ul {
+      width:110%;
+      margin-left: 2%;    
       li{
         margin-left: 3%;
-        font-size: 15PX;
+        font-size: 1em;
       } 
     }
       h1{
         margin-left: 3%;
-        font-size: 25PX;
+        font-size: 1.5em;
       } 
     }
 #slider{
     height: 50vh;
-    margin-left: -6%;
+    margin-top: -3%;
+    margin-left: -3%;
     
 
 }
@@ -225,7 +225,7 @@ textarea{
   margin-left: -20%;
 }
 }
-     /*Footer 850 Query*/
+/*Footer 850 Query*/
      footer{
         justify-content: center;
         position: relative;
@@ -316,17 +316,19 @@ textarea{
     h1{
      margin-top: 3%;
      margin-left: 0%;
-     font-size: 20PX;
+     font-size: 1.4em;
    } 
    ul {
      width:110%;
      margin-left: 0%;
+     font-size: 0.9em;
    }
 }
    #slider{
     height: 50vh;
     width: 90%;
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 2%;
     transition: 1s ease-in-out;
     &:hover{
        transform:scale(1.2);
@@ -534,7 +536,6 @@ font-size: 0.9em;
     }
 }
 /*Contact Form 550 Query*/
-
 .split-screen{
     margin-top: 5%;
     grid-template-rows: 10% 30% 45% 10%;
@@ -588,12 +589,10 @@ textarea{
     font-size: 0.75em;
   }
 /*Portafolio 550 Query*/
-
 .project-cont{
-    height: 8vh;
-    font-size: 15px;
+    height: 6vh;
+    font-size: 0.8em;
     margin-top: -5%;
-   
     ul {
     width:100%;
   text-align: center;
@@ -602,24 +601,21 @@ textarea{
    li{
     margin-top: 8%;
     margin-left: 3%;
-    font-size: 12PX;
+    font-size: 0.90em;
   } 
 }
 h1{
     margin-top: 10%;
     margin-left: 0%;
-    font-size: 20PX;
+    font-size: 1.4em;
   } 
 }
 
 #slider{
-    
-    margin-top: 30%;
+    margin-top: 32%;
     margin-left: -5%;
     height: 50%;
     width: 100%;
-
-  
   }
   /*About 550 Query*/
   .about-abt{
@@ -688,9 +684,6 @@ grid-template-rows: 4% 5% 5% 30% 35% 10%;
   }
 }
 }
-
-  
-
 }
 
 
@@ -852,17 +845,21 @@ grid-template-rows: 4% 5% 5% 30% 35% 10%;
      margin-left: 6%;
    
    li{
-    font-size: 12px;
+    font-size: 0.8em;
     margin-top: 8%;
     margin-left: 2%;
     text-align: center;
    }
+   h1{
+    font-size: 1.4em;
+
+   }
 }
 }
    #slider{
-    height: 50vh;
+    height: 45vh;
     width: 130%;
-    margin-top: 24%;
+    margin-top: 20%;
     margin-left:-20%;
 &:hover{
     transform:scale(1.2);
