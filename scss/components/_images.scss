@@ -31,10 +31,10 @@
     margin-right: 30%;
     height: 87%;
     width: 100%;
-  
 
-    img {   
-       
+
+    img {
+
         max-height: 100%;
         max-width: auto;
         border-radius: 50%;
@@ -88,35 +88,44 @@ footer {
 }
 
 /*About Images*/
-.picture{
+.picture {
     grid-area: picture;
     margin-top: 1%;
     padding-left: 15%;
- img{
-    height: 80%;
-    width: 90%;
-    border-radius: 50%; 
-  }  
+
+    img {
+        height: 80%;
+        width: 90%;
+        border-radius: 50%;
+    }
 }
+
 /*Services Images*/
-.design{
+.design {
     grid-area: design;
     margin-top: 0%;
     margin-left: 70%;
-    img{
-    margin-top: 12%;  
-    font-weight: 100;
-    height: 20vh;
-    width: 25vh;
-    border-radius: 50% ;
-    overflow: hidden;  
-    display:inline-block;
-    transition: 1s ease-in-out;
-    width:180px;
- &:hover{
-    transform:scale(1.5);
-    -ms-transform:scale(1.5); /* IE 9 */
-    -moz-transform:scale(1.5); /* Firefox */
-    -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -o-transform:scale(1.5);
-  }}}
+
+    img {
+        margin-top: 12%;
+        font-weight: 100;
+        height: 20vh;
+        width: 25vh;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        transition: 1s ease-in-out;
+        width: 180px;
+
+        &:hover {
+            transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -moz-transform: scale(1.5);
+            /* Firefox */
+            -webkit-transform: scale(1.5);
+            /* Safari and Chrome */
+            -o-transform: scale(1.5);
+        }
+    }
+}

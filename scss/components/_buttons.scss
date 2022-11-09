@@ -1,92 +1,100 @@
 /*Index Button*/
-.wrap{
-    grid-area: button;
-    display: inline-block;
-    position: relative;
-    margin-top: 1%;
-    margin-left: 20%;
-  .btn{
+.wrap {
+  grid-area: button;
+  display: inline-block;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 20%;
+
+  .btn {
     display: flex;
     justify-content: center;
-    padding: 10px 50px ;
+    padding: 10px 50px;
     border: 1px solid $solidcolor;
     border-radius: 30px;
-    text-decoration: none; 
-    width:60%;
-    color:$solidcolor;
+    text-decoration: none;
+    width: 60%;
+    color: $solidcolor;
     font-size: 1em;
-   
- &:hover{
-    color: $thirdcolor;
-    border: 1px solid $thirdcolor;
-    animation: pulsate 4s
-  }
-  @keyframes pulsate{
-    0%{
-      box-shadow: 
-      0 0 25px  $thirdcolor,
-      0 0 25px  $fourthcolor;
-    }
-}
-  }
-}
-/*Contact Form Button*/
-.wrap4{ 
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 60%;
-    }
-    .btn2{
-      padding: 10px 50px ;
-      border: 1px solid $solidcolor;
-      border-radius: 30px;
-      text-decoration: none; 
-      width: 53%;
-      color:$solidcolor;
-      
-    &:hover{
+
+    &:hover {
       color: $thirdcolor;
       border: 1px solid $thirdcolor;
-      animation: pulsate 4s;
-    } 
-}
-/*Portafolio Button*/
-[type=radio]{
-    display: none;
+      animation: pulsate 4s
+    }
+
+    @keyframes pulsate {
+      0% {
+        box-shadow:
+          0 0 25px $thirdcolor,
+          0 0 25px $fourthcolor;
+      }
+    }
   }
+}
+
+/*Contact Form Button*/
+.wrap4 {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 60%;
+}
+
+.btn2 {
+  padding: 10px 50px;
+  border: 1px solid $solidcolor;
+  border-radius: 30px;
+  text-decoration: none;
+  width: 53%;
+  color: $solidcolor;
+
+  &:hover {
+    color: $thirdcolor;
+    border: 1px solid $thirdcolor;
+    animation: pulsate 4s;
+  }
+}
+
+/*Portafolio Button*/
+[type=radio] {
+  display: none;
+}
+
 /*About Button*/
-.wrap-abt{
+.wrap-abt {
   grid-area: butt;
   width: 100%;
   margin-top: 4%;
   font-family: 'Montserrat', sans-serif;
-  color:$solidcolor;
- 
- a{
-  display: inline-block;
-  justify-content: center;
-  text-decoration: none; 
-  color:$solidcolor;
-  font-size: 0.9em;
+  color: $solidcolor;
+
+  a {
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    color: $solidcolor;
+    font-size: 0.9em;
+  }
 }
-}
+
 .about-btn {
   margin-left: 55%;
   margin-top: 1%;
-  padding: 10px 50px ;
+  padding: 10px 50px;
   border: 1px solid $solidcolor;
   border-radius: 30px;
- 
-&:hover{
-  color: $listservice;
-  border: 1px solid $solidbutton;
-  animation: pulsate 4s
+
+  &:hover {
+    color: $listservice;
+    border: 1px solid $solidbutton;
+    animation: pulsate 4s
+  }
 }
-}
-@keyframes pulsate{
-  0%{   
-    box-shadow: 
-    0 0 25px   $listservice,
-    0 0 25px  $solidbutton;
-    }
+
+@keyframes pulsate {
+  0% {
+    box-shadow:
+      0 0 25px $listservice,
+      0 0 25px $solidbutton;
+  }
 }

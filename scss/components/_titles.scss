@@ -1,58 +1,62 @@
 /*Index titles*/
-.title{
-    grid-area: title;
-    width: 100%;
-    margin-top: 8%;
-    font-size: 3em;
-    line-height: 50px;
-  }
+.title {
+  grid-area: title;
+  width: 100%;
+  margin-top: 8%;
+  font-size: 3em;
+  line-height: 50px;
+}
 
 /*Contact Form titles*/
-.copy{
-    grid-area: title;
-    margin-top: 8%;
-    margin-left: 15%;
+.copy {
+  grid-area: title;
+  margin-top: 8%;
+  margin-left: 15%;
   font-size: 2em;
-  }
-/*Portafolio titles*/
-.project-cont{
+}
 
-h1{
+/*Portafolio titles*/
+.project-cont {
+
+  h1 {
     display: flex;
-    justify-content:center;
-    width:100%;
+    justify-content: center;
+    width: 100%;
     margin-top: 0px;
     font-weight: 400;
     font-size: 1.8em;
     color: $thirdcolor;
-  } 
+  }
 }
+
 /*About titles*/
-.title2{
-    grid-area: title2;
-    text-align: center;
-    height: relative;
-    width:100%;
-    margin-top: 3%;
-    font-weight: 200;
-    font-size: 1.7em;  
-  }  
-  .name{
-    grid-area: name;
-    text-align: center;
-    width:100%;
-    margin-top: 0%;
-    font-weight: 400;
-    font-size: 3em;
-    color:$principal;
-  }
-  .motus{
-    grid-area: motus;
-    display: flex;
-    justify-content: center;
-    width:100%;
-    margin-top: 1%;
-    font-weight: 200;
-    font-size: 1.5em;
-    color: $thirdcolor;
-  }
+.title2 {
+  grid-area: title2;
+  text-align: center;
+  height: relative;
+  width: 100%;
+  margin-top: 3%;
+  font-weight: 200;
+  font-size: 1.7em;
+}
+
+.name {
+  grid-area: name;
+  text-align: center;
+  width: 100%;
+  margin-top: 0%;
+  font-weight: 400;
+  font-size: 3em;
+  color: $principal;
+}
+
+.motus {
+  grid-area: motus;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1%;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: $thirdcolor;
+}
