@@ -27,16 +27,18 @@
         &:hover {
             color: $thirdcolor;
         }
-    }}
+    }}  
 }
 /*Services List*/
+
+.services{
+  margin-top: 15%;
+}
 .list-services{
     width: 80%;
     height: 50vh;
-    margin-top:20%;
-    margin-left: 100%;
-    gap: 20%;
     animation: moveright2 4s linear 1;
+
   
   @keyframes moveright2{
     0%{

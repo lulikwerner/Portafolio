@@ -468,8 +468,8 @@ footer div img {
   padding-left: 15%;
 }
 .picture img {
-  height: 90%;
-  width: 100%;
+  height: 80%;
+  width: 90%;
   border-radius: 50%;
 }
 
@@ -580,12 +580,13 @@ footer div img {
 }
 
 /*Services List*/
+.services {
+  margin-top: 25%;
+}
+
 .list-services {
   width: 80%;
   height: 50vh;
-  margin-top: 20%;
-  margin-left: 100%;
-  gap: 20%;
   -webkit-animation: moveright2 4s linear 1;
           animation: moveright2 4s linear 1;
 }
@@ -1062,7 +1063,7 @@ footer div img {
   }
   /*About 850 Query*/
   .about-abt {
-    grid-template-areas: "title3" "name3" "motus3" "picture2" "description" "butt";
+    grid-template-areas: "title3" "name3" "motus3" "picture2a" "description" "butt";
     height: 100vh;
     width: 100%;
     grid-template-columns: 1fr;
@@ -1088,13 +1089,13 @@ footer div img {
     font-size: 1em;
   }
   .picture {
-    grid-area: picture2;
+    grid-area: picture2a;
     justify-content: center;
     margin-top: 0%;
-    margin-left: 20%;
+    margin-left: 25%;
   }
   .picture img {
-    max-width: 40%;
+    max-width: 30%;
     height: 100%;
   }
   .description {
@@ -1197,6 +1198,15 @@ footer div img {
   /*About 683 Query*/
   .about-btn {
     margin-top: 7%;
+  }
+  .picture {
+    height: 90%;
+    width: 100%;
+    margin-left: 20%;
+  }
+  .picture img {
+    height: 100%;
+    max-width: 35%;
   }
 }
 @media (max-width: 550px) {
@@ -1313,51 +1323,32 @@ footer div img {
   }
   /*About 550 Query*/
   .about-abt {
-    margin-left: 5%;
-    height: 100vh;
-    margin-top: 4%;
-    grid-template-areas: "titlea" "namea" "motusa" "picturea" "descriptiona" "bttna";
-    grid-template-columns: 0.9fr;
-    grid-template-rows: 4% 5% 5% 30% 35% 10%;
+    grid-template-rows: 5% 7% 5% 30% 35% 10%;
   }
   .title2 {
-    grid-area: titlea;
     font-size: 1em;
-    margin-top: 0%;
-    text-align: center;
   }
   .name {
-    grid-area: namea;
     font-size: 1.4em;
-    margin-top: 0%;
-    text-align: center;
   }
   .motus {
-    grid-area: motusa;
     font-size: 0.9em;
-    text-align: center;
   }
   .picture {
-    grid-area: picturea;
-    justify-content: center;
+    margin-top: -5%;
     height: 120%;
     width: 100%;
   }
   .description {
-    grid-area: descriptiona;
     font-size: 0.9em;
-    line-height: 1.5;
-    margin-top: 15%;
-    text-align: center;
-  }
-  .wrap-abt {
-    grid-area: bttna;
+    line-height: 1.5em;
+    margin-top: 5%;
   }
   .wrap-abt a {
-    margin-top: 12%;
+    margin-top: 8%;
     text-align: center;
     width: 80%;
-    font-size: 10px;
+    font-size: 0.8em;
   }
   /*Services 550 Query*/
   .list-services {
@@ -1374,35 +1365,32 @@ footer div img {
 @media (max-width: 400px) {
   /*About 400 Query*/
   .about-abt {
-    height: 140vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5% 5% 5% 30% 25% 10%;
+    grid-template-rows: 5% 1% 6% 30% 35% 10%;
   }
   .title2 {
-    font-size: 0.9em;
+    font-size: 10em;
   }
   .name {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .motus {
-    font-size: 0.7em;
-    margin-top: 2%;
+    font-size: 0.8em;
+  }
+  .picture {
+    margin-top: -5%;
+    height: 120%;
+    width: 100%;
   }
   .description {
-    line-height: 0.4em;
-    font-size: 0.6em;
-  }
-  .picture img {
-    margin-left: 50%;
-    width: 150%;
-  }
-  .wrap-abt {
-    margin-top: 12%;
-    justify-content: center;
-    width: 85%;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-top: 5%;
   }
   .wrap-abt a {
-    font-size: 8px;
+    margin-top: 8%;
+    text-align: center;
+    width: 80%;
+    font-size: 0.8em;
   }
   /*Index 400 Query*/
   .content {
