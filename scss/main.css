@@ -1161,7 +1161,7 @@ footer div img {
     transition: all 0.2s ease-in-out;
   }
   .menu li {
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .menu li a {
     padding: 10px;
