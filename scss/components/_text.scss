@@ -1,47 +1,50 @@
 /*Index text*/
-.legend{
-    grid-area:legend;
-    margin-top: 0%;
-    width: 500px;
-    line-height: 28px;
-    font-size: 1.3em;
-  }
+.legend {
+  grid-area: legend;
+  margin-top: 0%;
+  width: 500px;
+  line-height: 1.7;
+  font-size: 1.3em;
+}
+
 /*Contact Form*/
-.wrapper{
-    grid-area: info3;
-    text-align: left;
-    width: 75%; 
-    margin-top: 10%;
-    margin-left: 15%;
-    font-weight: 200;
-    font-size: 0.9em;
-    line-height: 30px;
-  }
-  .contact{
-    grid-area: contact2;
-    margin-top: 8%;
-    margin-left: 5%;
-  }
-  
-  .box1 input{
-    height: 5vh;
-    padding-top: 5%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: medium;
-    color: $solidcolor;
-    border: none;
-    border-bottom: 1px solid $solidcolor;
-    outline: none;
-    background: transparent;  
-  }
+.wrapper {
+  grid-area: info3;
+  text-align: left;
+  width: 75%;
+  margin-top: 10%;
+  margin-left: 15%;
+  font-weight: 200;
+  font-size: 0.9em;
+  line-height: 2.5em;
+}
 
-  .box2{
+.contact {
+  grid-area: contact2;
+  margin-top: 8%;
+  margin-left: 5%;
+}
 
-   label{
+.box1 input {
+  height: 5vh;
+  padding-top: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: medium;
+  color: $solidcolor;
+  border: none;
+  border-bottom: 1px solid $solidcolor;
+  outline: none;
+  background: transparent;
+}
+
+.box2 {
+
+  label {
     margin-top: 4%;
   }
-  input{
+
+  input {
     padding-top: 5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -53,12 +56,13 @@
     background: transparent;
   }
 }
-  
-  .box3 {
-    label{
+
+.box3 {
+  label {
     margin-top: 6%;
   }
-input{
+
+  input {
     padding-top: 5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -70,13 +74,14 @@ input{
     background: transparent;
   }
 }
-  
-  .box4{
 
-  label{
+.box4 {
+
+  label {
     margin-top: 8%;
   }
-  textarea{
+
+  textarea {
     padding-top: 5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -88,13 +93,15 @@ input{
     background: transparent;
   }
 }
+
 /*About text*/
-.description{
-    grid-area: description;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    font-size: 20px;
-    line-height: 40px;
-    color: $solidcolor;
-  }
+.description {
+  grid-area: description;
+  width: 70%;
+  margin-top: 3%;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 1em;
+  line-height: 1.3em;
+  color: $solidcolor;
+}

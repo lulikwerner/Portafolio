@@ -61,18 +61,22 @@
   margin-top: 4%;
   font-family: 'Montserrat', sans-serif;
   color:$solidcolor;
+ 
  a{
   display: inline-block;
   justify-content: center;
   text-decoration: none; 
   color:$solidcolor;
+  font-size: 0.9em;
 }
 }
 .about-btn {
   margin-left: 55%;
+  margin-top: 1%;
   padding: 10px 50px ;
   border: 1px solid $solidcolor;
   border-radius: 30px;
+ 
 &:hover{
   color: $listservice;
   border: 1px solid $solidbutton;

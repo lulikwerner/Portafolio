@@ -2,7 +2,7 @@
 .title{
     grid-area: title;
     width: 100%;
-    margin-top: 3%;
+    margin-top: 8%;
     font-size: 3em;
     line-height: 50px;
   }
@@ -35,7 +35,7 @@ h1{
     width:100%;
     margin-top: 3%;
     font-weight: 200;
-    font-size: 30PX;  
+    font-size: 1.7em;  
   }  
   .name{
     grid-area: name;
@@ -43,7 +43,7 @@ h1{
     width:100%;
     margin-top: 0%;
     font-weight: 400;
-    font-size: 50PX;
+    font-size: 3em;
     color:$principal;
   }
   .motus{
@@ -53,6 +53,6 @@ h1{
     width:100%;
     margin-top: 1%;
     font-weight: 200;
-    font-size: 20PX;
+    font-size: 1.5em;
     color: $thirdcolor;
   }

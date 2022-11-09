@@ -17,17 +17,17 @@
     }
 
     .legend {
-      margin-top: 0%;
+      margin-top: 5%;
         font-size: 1em;
     }
 
     .profile {
 
         margin-top: 3%;
-        margin-left: 10%;
+        margin-left: 15%;
     
         img {
-          max-height: 70%;
+          max-height: 80%;
           max-width: auto;
         
         }
@@ -66,14 +66,25 @@
     font-size:x-small;
     font-weight: 100;
   }
+  .box1{
+    input{
+      font-size: 1em;
+    }
+  }
   .box2 {
     label{
       margin-top: 6%;
+    }
+    input{
+      font-size: 1em;
     }
 }
   .box3 {
     label{
     margin-top: 8%;
+  }
+  input{
+    font-size: 1em;
   }
 }
   .box4 {
@@ -81,7 +92,7 @@
     margin-top: 6%;
   }
 textarea{
-    font-size: 16px;
+    font-size: 1em;
   }
 }
   .wrap4{ 
@@ -114,15 +125,30 @@ textarea{
 
 }
 /*About 1024 Query*/
+.title2{
+  font-size: 1.4em; 
+}
+.name{
+  font-size: 2em;
+}
+.motus{
+  font-size: 1.2em;
+}
 .about-abt{
     grid-template-rows: repeat(2, 10%) 6% 50% 20%;
     height: 70vh;
     }   
     .description{
       margin-top: 5%;
-      font-size: 18PX;  
-      line-height: 30px;
+      font-size: 0.9em;  
+      line-height: 2em;
     }
+}
+.wrap-abt{
+ margin-top: 1%;
+ a{
+  font-size: 0.7em;
+}
 }
 
 @media(max-width:850px) {
@@ -305,6 +331,7 @@ textarea{
     &:hover{
        transform:scale(1.2);
     }
+  }
  /*About 850 Query*/
     .about-abt{
         grid-template-areas: "title3"
@@ -316,26 +343,26 @@ textarea{
         height: 100vh;
         width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 5% 5% 5% 50% 20% 10%;
+        grid-template-rows: 8% 10% 5% 40% 20% 10%;
       }
       .title2{
         grid-area: title3;
         text-align: center;
         position: relative;
         margin-top: 2%;
-        font-size: 19px;  
+        font-size: 1.1em;  
       }
       .name{
         grid-area: name3;
         text-align: center;
         margin-top: 1%;
-        font-size: 29PX;  
+        font-size: 1.5;  
       }
       .motus{
         grid-area: motus3;
         text-align: center;
-        margin-top: 1%;
-        font-size: 18PX;
+        margin-top: 0%;
+        font-size: 1em;
       }
       .picture{
         grid-area: picture2;
@@ -343,24 +370,28 @@ textarea{
         margin-top: 0%;
         margin-left: 20%;
       img{
-        width: 50%;
+        max-width: 40%;
         height: 100%;
       } 
     }
       .description{
         grid-area: description;
         text-align: center;
+        width: 80%;
         margin-top: 2%;
         margin-left: 10%;
-        font-size: 18PX;  
-        line-height: 30px;
+        font-size: 0.9em;  
+        line-height: 1.4em;
       }
       .about-btn {
         grid-area: butt;
         text-align: center;
         width: 80%;
-        margin-top: 0%;
+        margin-top: 2%;
         margin-left: 10%;
+        a{
+          font-size: 0.9em;
+        }
       }
     } 
 /*Services 850 Query*/
@@ -371,16 +402,15 @@ textarea{
   
 h5{
     margin-left: 20%;
-    font-size: 25PX;
+    font-size: 1.5em;
   }
 div{
     width: 100%;
-
     margin-left: 1%;
   
   p{
     width: 90%;
-    font-size: 18px;
+    font-size: 1.2em;
     margin-top: 4%;
     margin-left: 25%;
   }
@@ -393,11 +423,10 @@ div{
     margin-left: 40%;
   } 
 
-}
+
 
 /*Menu 683 Query*/
 @media(max-width:683px) {
- 
     .menu {
         flex-direction: column;
         align-items: center;
@@ -410,8 +439,6 @@ div{
         z-index: 100;
         background-color: rgba(0, 0, 0, 0.8);
         transition: all 0.2s ease-in-out;
-     
-
         li {
             margin-top: 40px;
         
@@ -423,7 +450,6 @@ div{
         }
     }
     }
-
     .open-menu,
     .close-menu {
         display: block;
@@ -433,7 +459,6 @@ div{
         right: 0;
     }
 /*Index 683 Query*/
-
 .title {
   font-size: 1.5em;
 } 
@@ -454,11 +479,15 @@ text-align: center;
 font-size: 0.9em;
 }
 }
-}
 
+/*About 683 Query*/
+.about-btn {
+  margin-top: 7%;
+}
+}
 @media(max-width:550px){
 
-    /*Index 550 Query*/
+/*Index 550 Query*/
     .content {
         width: 70%;
         height: 120vh;
@@ -494,7 +523,7 @@ font-size: 0.9em;
    
 
         }
-      /*Footer 550 Query*/  
+/*Footer 550 Query*/  
       footer{
          div{
              img{
@@ -604,43 +633,44 @@ h1{
                         "descriptiona"
                         "bttna";
     grid-template-columns: 0.90fr;
-grid-template-rows: 5% 5% 5% 30% 35% 10%;
+grid-template-rows: 4% 5% 5% 30% 35% 10%;
   }
   .title2{
     grid-area: titlea;
-    font-size: 18px; 
+    font-size: 1em; 
     margin-top: 0%; 
-    margin-left:-5%;
+   text-align: center;
   }
   .name{
     grid-area: namea;
-    font-size: 28PX;
-    margin-left: -5%;
+    font-size: 1.4em;
+    margin-top: 0%;
+    text-align: center;
   }
   .motus{
     grid-area: motusa;
-    font-size: 17PX;
-    margin-left: -5%;
+    font-size: 0.9em;
+    text-align: center;
   }
   .picture{
     grid-area: picturea;
-    height: 40vh;
-    width: 40vh;
-    margin-top: -2%;
-    margin-left: 10%;
+    justify-content: center;
+    height: 120%;
+    width: 100%;
   }
   .description{
     grid-area: descriptiona;
-    line-height: 30px;
-    font-size: 14PX; 
-    margin-top: 5%;
-    margin-left: 10%; 
+    font-size: 0.9em; 
+    line-height: 1.5;
+    margin-top: 15%;
+    text-align: center;
   }
   .wrap-abt{
     grid-area: bttna;
+ 
      a{
+      margin-top: 12%;
     text-align: center;
-    margin-left: 10%;
     width: 80%;
     font-size: 10px;
   } 
@@ -650,34 +680,52 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
     margin-left: 17%;
     margin-top: -3%;
   h5{
-    font-size: 20PX;
+    font-size: 1.2em;
+  }
+  div{
+  p{
+    font-size: 1em;
   }
 }
+}
+
+  
+
 }
 
 
 @media(max-width:400px){
   /*About 400 Query*/
   .about-abt{
-    height: 80vh;
+    height: 140vh;
+    grid-template-columns: 1fr;
     grid-template-rows: 5% 5% 5% 30% 25% 10%;
   }
   .title2{
-    font-size: 15PX;  
+    font-size: 0.9em;  
   }
   .name{
-    font-size: 25PX;
+    font-size: 1.2em;
   }
   .motus{
-    font-size: 15PX;
+    font-size: 0.7em;
     margin-top: 2%;
   }
   .description{
-    line-height: 25px;
-    font-size: 10PX;  
+    line-height: 0.4em;
+    font-size: 0.6em; 
   } 
+.picture{
+  img{
+    margin-left: 50%;
+    width: 150%;
+  }
+  
+}
   .wrap-abt{
-    margin-left: -2%;
+    margin-top: 12%;
+    justify-content: center;
+    width: 85%;
   }
   .wrap-abt a{
   font-size: 8px;
@@ -858,25 +906,28 @@ grid-template-rows: 5% 5% 5% 30% 35% 10%;
 .list-services{
     margin-top: 5%;
     margin-left: 10%;
+    padding: 0%;
 h5{
   margin-left: 0%;
-  font-size: 20px;
+  font-size: 0.9em;
 }
 div {
     p{
-  width: 100%;
-  margin-left: 3%;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
   padding-top: 2%;  
-  font-size: 15px;
+  font-size: 0.8em;
   }
 }
 }
 .design {
     img{
   margin-left: 1%;
-  height: 20vh;
-  width:130px;
-
+  height: 15vh;
+  width:100px;
+  gap: 2%;
     }
 }
+
 }

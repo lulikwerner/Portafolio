@@ -34,7 +34,7 @@
     width: 80%;
     height: 50vh;
     margin-top:20%;
-    margin-left: 5%;
+    margin-left: 100%;
     gap: 20%;
     animation: moveright2 4s linear 1;
   
@@ -55,7 +55,8 @@
     text-align: center;
     width: 190%;
     margin-top: 15%;
-    margin-left: 5%;
+    margin-left: 70%;
+    font-size: 1.8em;
     color: $solidcolor;
  
     &:hover{
@@ -63,12 +64,12 @@
     }
 }}
 h5{
-    justify-content: center;
+ 
     width: 100%;
     font-weight: 400;
-    margin-left: 50%;
+    margin-left: 60%;
     gap: 10px;
     color:$thirdcolor;
-    font-size: 30PX;
+    font-size: 2em;
   }
 }
