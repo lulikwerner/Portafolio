@@ -57,14 +57,14 @@
 
   div {
     p {
-      display: flex;
-      justify-content: center;
-      text-align: center;
+      display: map-get($styles_services,display);
+      justify-content: map-get($styles_services,j-content);
+      text-align: map-get($styles_services,t-align);
       width: 190%;
       margin-top: 15%;
       margin-left: 70%;
-      font-size: 1.8em;
-      color: $solidcolor;
+      font-size: map-get($styles_services,f-size);
+      color: map-get($styles_services,color);
 
       &:hover {
         color: $listservice;
