@@ -315,17 +315,20 @@ footer {
 /*About Button*/
 .wrap-abt {
   grid-area: butt;
+  justify-content: center;
   width: 100%;
   margin-top: 4%;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
   color: #fff;
 }
 .wrap-abt a {
   display: inline-block;
-  justify-content: center;
+  text-align: center;
   text-decoration: none;
+  width: 30%;
+  margin-left: 40%;
   color: #fff;
-  font-size: 0.9em;
 }
 
 .about-btn {
@@ -912,13 +915,14 @@ footer div img {
   }
   .name {
     font-size: 2em;
+    margin-top: 1%;
   }
   .motus {
     font-size: 1.2em;
   }
   .about-abt {
     grid-template-rows: repeat(2, 10%) 6% 50% 20%;
-    height: 70vh;
+    height: 67vh;
   }
   .description {
     margin-top: 5%;
@@ -927,10 +931,8 @@ footer div img {
   }
 }
 .wrap-abt {
-  margin-top: 1%;
-}
-.wrap-abt a {
-  font-size: 0.7em;
+  margin-top: 6%;
+  font-size: 0.8em;
 }
 
 @media (max-width: 850px) {
@@ -960,9 +962,10 @@ footer div img {
   }
   .profile {
     grid-area: photo;
+    text-align: center;
     max-height: 100%;
     margin-top: 8%;
-    margin-left: 37%;
+    margin-left: 0%;
   }
   .profile img {
     border-radius: 50%;
@@ -983,9 +986,9 @@ footer div img {
   }
   .wrap .btn {
     display: absolute;
+    text-align: center;
     width: 70%;
     margin-top: 4%;
-    margin-left: -20%;
   }
   /*Footer 850 Query*/
   footer {
@@ -997,9 +1000,6 @@ footer div img {
     height: 55px;
     margin-right: 30px;
     margin-left: 10px;
-  }
-  .wrap {
-    margin-left: 40%;
   }
   /*Contact Form 850 Query*/
   .dbox {
@@ -1081,26 +1081,26 @@ footer div img {
     height: 100vh;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 8% 10% 5% 40% 20% 10%;
+    grid-template-rows: 8% 10% 5% 35% 25% 10%;
   }
   .title2 {
     grid-area: title3;
     text-align: center;
     position: relative;
     margin-top: 2%;
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
   .name {
     grid-area: name3;
     text-align: center;
     margin-top: 1%;
-    font-size: 1.5;
+    font-size: 1.8;
   }
   .motus {
     grid-area: motus3;
     text-align: center;
     margin-top: 0%;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .picture {
     grid-area: picture2a;
@@ -1110,26 +1110,25 @@ footer div img {
   }
   .picture img {
     max-width: 30%;
-    height: 100%;
+    height: 80%;
   }
   .description {
     grid-area: description;
     text-align: center;
     width: 80%;
-    margin-top: 2%;
+    margin-top: 0%;
     margin-left: 10%;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.4em;
   }
-  .about-btn {
+  .wrap-abt {
     grid-area: butt;
     text-align: center;
-    width: 80%;
-    margin-top: 2%;
-    margin-left: 10%;
+    margin-top: 1%;
   }
-  .about-btn a {
-    font-size: 0.9em;
+  .wrap-abt a {
+    margin-left: 0%;
+    font-size: 1em;
   }
 }
 /*Services 850 Query*/
@@ -1192,10 +1191,6 @@ footer div img {
   .title {
     font-size: 1.5em;
   }
-  .profile {
-    margin-top: 8%;
-    margin-left: 30%;
-  }
   .profile img {
     max-width: 50%;
   }
@@ -1206,22 +1201,24 @@ footer div img {
     grid-area: button;
   }
   .wrap .btn {
-    text-align: center;
     font-size: 0.9em;
   }
   /*About 683 Query*/
   .about-btn {
-    margin-top: 7%;
+    margin-top: 3%;
+  }
+  .description {
+    margin-top: 1%;
   }
   .picture {
-    height: 90%;
-    width: 100%;
-    margin-left: 20%;
+    height: 100%;
+    width: 80%;
   }
   .picture img {
     height: 100%;
     max-width: 35%;
   }
+  /*Services 683 Query*/
 }
 @media (max-width: 550px) {
   /*Index 550 Query*/
@@ -1229,28 +1226,32 @@ footer div img {
     width: 70%;
     height: 120vh;
     margin-left: 12%;
-    grid-template-rows: 15% 40% 35% 15%;
+    grid-template-rows: 15% 40% 30% 15%;
   }
   .title {
     text-align: center;
     margin-top: 6%;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .profile {
     margin-top: 10%;
-    margin-left: 23%;
   }
   .profile img {
     height: 80%;
     max-width: 60%;
   }
   .legend {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 5%;
   }
   .wrap {
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 15%;
+  }
+  .wrap .btn {
+    text-align: center;
     font-size: 0.8em;
-    width: 90%;
   }
   /*Footer 550 Query*/
   footer div img {
@@ -1337,7 +1338,7 @@ footer div img {
   }
   /*About 550 Query*/
   .about-abt {
-    grid-template-rows: 5% 7% 5% 30% 35% 10%;
+    grid-template-rows: 5% 7% 5% 40% 35% 10%;
   }
   .title2 {
     font-size: 1em;
@@ -1349,9 +1350,12 @@ footer div img {
     font-size: 0.9em;
   }
   .picture {
-    margin-top: -5%;
-    height: 120%;
+    text-align: center;
+    margin-top: 0%;
+    max-height: 120%;
     width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
   }
   .description {
     font-size: 0.9em;
@@ -1359,7 +1363,7 @@ footer div img {
     margin-top: 5%;
   }
   .wrap-abt a {
-    margin-top: 8%;
+    margin-top: 1%;
     text-align: center;
     width: 80%;
     font-size: 0.8em;
@@ -1379,7 +1383,7 @@ footer div img {
 @media (max-width: 400px) {
   /*About 400 Query*/
   .about-abt {
-    grid-template-rows: 4% 6% 4% 30% 35% 10%;
+    grid-template-rows: 4% 6% 4% 30% 35% 15%;
   }
   .title2 {
     font-size: 0.9em;
@@ -1393,19 +1397,18 @@ footer div img {
   }
   .picture {
     margin-top: -5%;
-    justify-content: center;
-    margin-left: 15%;
-    max-height: 100%;
-    width: 120%;
+    max-height: 110%;
+    width: 100%;
   }
   .description {
-    margin-top: 3%;
+    margin-top: 4%;
     font-size: 0.9em;
-    line-height: 1.1em;
+    line-height: 1.4em;
     margin-top: 5%;
+    overflow-y: scroll;
   }
   .wrap-abt a {
-    margin-top: 8%;
+    margin-top: 4%;
     text-align: center;
     width: 80%;
     font-size: 0.7em;
@@ -1424,7 +1427,6 @@ footer div img {
   }
   .profile {
     margin-top: 15%;
-    margin-left: 25%;
   }
   .profile img {
     height: 90%;
@@ -1439,13 +1441,12 @@ footer div img {
   }
   .wrap {
     margin-top: 0%;
-    margin-left: 25%;
     -o-object-position: center;
        object-position: center;
     width: 80%;
   }
   .wrap .btn {
-    width: 100%;
+    width: 90%;
     font-size: 0.7em;
   }
   /*Contact Form 400 Query*/
@@ -1523,9 +1524,9 @@ footer div img {
   }
   #slider {
     height: 45vh;
-    width: 130%;
+    width: 100%;
     margin-top: 20%;
-    margin-left: -20%;
+    margin-left: -5%;
   }
   #slider:hover {
     transform: scale(1.2);

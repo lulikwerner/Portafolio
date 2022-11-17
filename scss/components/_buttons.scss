@@ -63,17 +63,19 @@
 /*About Button*/
 .wrap-abt {
   grid-area: butt;
+  justify-content: center;
   width: 100%;
   margin-top: 4%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
   color: $solidcolor;
-
   a {
     display: inline-block;
-    justify-content: center;
+    text-align: center;
     text-decoration: none;
+    width: 30%;
+    margin-left: 40%;
     color: $solidcolor;
-    font-size: 0.9em;
   }
 }
 
@@ -81,7 +83,7 @@
   margin-left: 55%;
   margin-top: 1%;
   padding: 10px 50px;
-  border: 1px solid $solidcolor;
+  border: 1px solid $solidcolor;  
   border-radius: 30px;
 
   &:hover {

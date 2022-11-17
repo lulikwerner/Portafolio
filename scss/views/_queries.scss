@@ -150,6 +150,7 @@
 
   .name {
     font-size: 2em;
+    margin-top: 1%;
   }
 
   .motus {
@@ -158,7 +159,7 @@
 
   .about-abt {
     grid-template-rows: repeat(2, 10%) 6% 50% 20%;
-    height: 70vh;
+    height: 67vh;
   }
 
   .description {
@@ -169,11 +170,8 @@
 }
 
 .wrap-abt {
-  margin-top: 1%;
-
-  a {
-    font-size: 0.7em;
-  }
+  margin-top: 6%;
+    font-size: 0.8em;
 }
 
 @media(max-width:850px) {
@@ -219,9 +217,10 @@
 
   .profile {
     grid-area: photo;
+    text-align: center;
     max-height: 100%;
     margin-top: 8%;
-    margin-left: 37%;
+   margin-left: 0%;
 
     img {
 
@@ -246,9 +245,9 @@
 
     .btn {
       display: absolute;
+      text-align: center;
       width: 70%;
       margin-top: 4%;
-      margin-left: -20%;
     }
   }
 
@@ -271,10 +270,7 @@
     }
   }
 
-  .wrap {
-
-    margin-left: 40%;
-  }
+ 
 
   /*Contact Form 850 Query*/
   .dbox {
@@ -389,7 +385,7 @@
     height: 100vh;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 8% 10% 5% 40% 20% 10%;
+    grid-template-rows: 8% 10% 5% 35% 25% 10%;
   }
 
   .title2 {
@@ -397,21 +393,21 @@
     text-align: center;
     position: relative;
     margin-top: 2%;
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
 
   .name {
     grid-area: name3;
     text-align: center;
     margin-top: 1%;
-    font-size: 1.5;
+    font-size: 1.8;
   }
 
   .motus {
     grid-area: motus3;
     text-align: center;
     margin-top: 0%;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .picture {
@@ -422,7 +418,7 @@
 
     img {
       max-width: 30%;
-      height: 100%;
+      height: 80%;
     }
   }
 
@@ -430,23 +426,21 @@
     grid-area: description;
     text-align: center;
     width: 80%;
-    margin-top: 2%;
+    margin-top: 0%;
     margin-left: 10%;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.4em;
   }
-
-  .about-btn {
-    grid-area: butt;
-    text-align: center;
-    width: 80%;
-    margin-top: 2%;
-    margin-left: 10%;
-
-    a {
-      font-size: 0.9em;
-    }
+.wrap-abt{
+  grid-area: butt;
+  text-align: center;
+  margin-top: 1%;
+  a{
+    margin-left: 0%;
+    font-size: 1em;
   }
+}
+
 }
 
 /*Services 850 Query*/
@@ -524,8 +518,7 @@
   }
 
   .profile {
-    margin-top: 8%;
-    margin-left: 30%;
+
 
     img {
       max-width: 50%;
@@ -540,20 +533,22 @@
     grid-area: button;
 
     .btn {
-      text-align: center;
+
       font-size: 0.9em;
     }
   }
 
   /*About 683 Query*/
-  .about-btn {
-    margin-top: 7%;
+.about-btn {
+    margin-top: 3%;
   }
-
+.description{
+  margin-top: 1%;
+}
   .picture {
-    height: 90%;
-    width: 100%;
-    margin-left: 20%;
+    height: 100%;
+    width: 80%;
+  
 
     img {
       height: 100%;
@@ -561,8 +556,10 @@
 
     }
   }
-}
 
+/*Services 683 Query*/
+
+}
 @media(max-width:550px) {
 
   /*Index 550 Query*/
@@ -571,18 +568,17 @@
     height: 120vh;
     margin-left: 12%;
 
-    grid-template-rows: 15% 40% 35% 15%;
+    grid-template-rows: 15% 40% 30% 15%;
   }
 
   .title {
     text-align: center;
     margin-top: 6%;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .profile {
     margin-top: 10%;
-    margin-left: 23%;
 
     img {
 
@@ -592,16 +588,22 @@
   }
 
   .legend {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 5%;
   }
 
   .wrap {
-    font-size: 0.8em;
-    width: 90%;
 
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 15%;
 
-
+    .btn{
+      text-align: center;
+      font-size: 0.8em;
+    
+    }
+  
   }
 
   /*Footer 550 Query*/
@@ -714,7 +716,7 @@
 
   /*About 550 Query*/
   .about-abt {
-    grid-template-rows: 5% 7% 5% 30% 35% 10%;
+    grid-template-rows: 5% 7% 5% 40% 35% 10%;
   }
 
   .title2 {
@@ -730,9 +732,13 @@
   }
 
   .picture {
-    margin-top: -5%;
-    height: 120%;
+    text-align: center;
+    margin-top: 0%;
+    max-height: 120%;
     width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
+ 
   }
 
   .description {
@@ -744,7 +750,7 @@
   .wrap-abt {
 
     a {
-      margin-top: 8%;
+      margin-top: 1%;
       text-align: center;
       width: 80%;
       font-size: 0.8em;
@@ -773,7 +779,7 @@
 
   /*About 400 Query*/
   .about-abt {
-    grid-template-rows: 4% 6% 4% 30% 35% 10%;
+    grid-template-rows: 4% 6% 4% 30% 35% 15%;
   }
 
   .title2 {
@@ -792,23 +798,23 @@
 
   .picture {
     margin-top: -5%;
-    justify-content: center;  
-    margin-left: 15%;
-    max-height: 100%;
-    width: 120%;  
+
+    max-height: 110%;
+    width: 100%;  
   }
 
   .description {
-    margin-top: 3%;
+    margin-top: 4%;
     font-size: 0.9em;
-    line-height: 1.1em;
+    line-height: 1.4em;
     margin-top: 5%;
+    overflow-y: scroll;
   }
 
   .wrap-abt {
 
     a {
-      margin-top: 8%;
+      margin-top: 4%;
       text-align: center;
       width: 80%;
       font-size: 0.7em;
@@ -832,7 +838,7 @@
   .profile {
 
     margin-top: 15%;
-    margin-left: 25%;
+
 
 
     img {
@@ -852,13 +858,13 @@
 
   .wrap {
     margin-top: 0%;
-    margin-left: 25%;
     object-position: center;
     width: 80%;
 
     .btn {
-      width: 100%;
+      width: 90%;
       font-size: .7em;
+      
 
     }
   }
@@ -964,9 +970,9 @@
 
   #slider {
     height: 45vh;
-    width: 130%;
+    width: 100%;
     margin-top: 20%;
-    margin-left: -20%;
+    margin-left: -5%;
 
     &:hover {
       transform: scale(1.2);
