@@ -478,15 +478,20 @@ footer div img {
 }
 
 /*Services Images*/
+.col {
+  margin-top: 3%;
+  height: 25rem;
+  width: 20rem;
+}
+
 .design {
-  grid-area: design;
+  justify-content: center;
   margin-top: 0%;
-  margin-left: 70%;
 }
 .design img {
   margin-top: 12%;
   font-weight: 100;
-  height: 20vh;
+  height: 100vh;
   width: 25vh;
   border-radius: 50%;
   overflow: hidden;
@@ -495,7 +500,7 @@ footer div img {
   width: 180px;
 }
 .design img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   -ms-transform: scale(1.5);
   /* IE 9 */
   -moz-transform: scale(1.5);
@@ -631,9 +636,9 @@ footer div img {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 190%;
+  width: 110%;
   margin-top: 15%;
-  margin-left: 70%;
+  margin-left: 0%;
   font-size: 1.8em;
   color: #fff;
 }
@@ -643,10 +648,10 @@ footer div img {
 .list-services h5 {
   width: 100%;
   font-weight: 400;
-  margin-left: 60%;
+  margin-left: -100%;
   gap: 10px;
   color: #AB3EA6;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /*Index text*/
@@ -929,12 +934,22 @@ footer div img {
     font-size: 0.9em;
     line-height: 2em;
   }
+  .wrap-abt {
+    margin-top: 6%;
+    font-size: 0.8em;
+  }
+  /*Services 1024 Query*/
+  .row {
+    margin-right: 0%;
+  }
+  .col {
+    width: 15rem;
+  }
+  .hig {
+    margin-top: -3%;
+    width: 150%;
+  }
 }
-.wrap-abt {
-  margin-top: 6%;
-  font-size: 0.8em;
-}
-
 @media (max-width: 850px) {
   /*Navbar 850 Query*/
   .logo img {
@@ -1132,6 +1147,10 @@ footer div img {
   }
 }
 /*Services 850 Query*/
+.col {
+  margin-left: 8%;
+}
+
 .list-services {
   height: 45vh;
   margin-top: 10%;
@@ -1218,7 +1237,6 @@ footer div img {
     height: 100%;
     max-width: 35%;
   }
-  /*Services 683 Query*/
 }
 @media (max-width: 550px) {
   /*Index 550 Query*/
@@ -1369,15 +1387,51 @@ footer div img {
     font-size: 0.8em;
   }
   /*Services 550 Query*/
+  .row {
+    height: 1%;
+  }
+  .col {
+    margin-left: -5%;
+    margin-top: 2%;
+    width: 90%;
+    height: 5%;
+  }
+  .card-title {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 20%;
+    font-size: 1.3em;
+    height: auto;
+  }
+  .design img {
+    height: 20vh;
+    width: 30vh;
+    margin-top: 8%;
+    margin-left: 0%;
+  }
+  .wth img {
+    margin-left: -8%;
+    width: 25vh;
+  }
+  .col div {
+    display: flex;
+    flex-direction: vertical;
+    align-content: horizontal;
+  }
+  .col div p {
+    width: 100%;
+    height: 40%;
+    font-size: 0.8rem;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+  .col div h5 {
+    margin-top: 15%;
+    font-size: 1.2rem;
+  }
   .list-services {
-    margin-left: 17%;
-    margin-top: -3%;
-  }
-  .list-services h5 {
-    font-size: 1.2em;
-  }
-  .list-services div p {
-    font-size: 1em;
+    height: 25vh;
+    margin-top: 2%;
   }
 }
 @media (max-width: 400px) {
@@ -1532,26 +1586,20 @@ footer div img {
     transform: scale(1.2);
   }
   /*Services 400 Query*/
-  .list-services {
-    margin-top: 5%;
-    margin-left: 10%;
-    padding: 0%;
-  }
-  .list-services h5 {
-    margin-left: 0%;
-    font-size: 0.9em;
-  }
-  .list-services div p {
-    text-align: center;
-    width: 60%;
-    margin-left: 20%;
-    padding-top: 2%;
-    font-size: 0.8em;
+  .col {
+    margin-left: -12%;
   }
   .design img {
-    margin-left: 1%;
     height: 15vh;
-    width: 100px;
-    gap: 2%;
+    width: 30vh;
+  }
+  .wth img {
+    width: 25vh;
+  }
+  .col div p {
+    font-size: 0.8rem;
+  }
+  .col div h5 {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

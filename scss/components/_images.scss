@@ -101,24 +101,30 @@ footer {
 }
 
 /*Services Images*/
+.col{
+    margin-top: 3%;
+    height: 25rem;
+    width: 20rem;
+}
 .design {
-    grid-area: design;
+    justify-content: center;
     margin-top: 0%;
-    margin-left: 70%;
+   
 
-    img {
+    img {   
         margin-top: 12%;
         font-weight: 100;
-        height: 20vh;
+        height: 100vh;
         width: 25vh;
         border-radius: 50%;
         overflow: hidden;
         display: inline-block;
         transition: 1s ease-in-out;
         width: 180px;
+      
 
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.3);
             -ms-transform: scale(1.5);
             /* IE 9 */
             -moz-transform: scale(1.5);

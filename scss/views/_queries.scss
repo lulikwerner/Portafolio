@@ -167,13 +167,25 @@
     font-size: 0.9em;
     line-height: 2em;
   }
-}
+
 
 .wrap-abt {
   margin-top: 6%;
     font-size: 0.8em;
 }
+/*Services 1024 Query*/
+.row{
+  margin-right: 0%;
+}
+.col{ 
+  width: 15rem;
+}
 
+.hig{
+  margin-top: -3%;
+  width: 150%;
+}
+}
 @media(max-width:850px) {
 
   /*Navbar 850 Query*/
@@ -444,6 +456,10 @@
 }
 
 /*Services 850 Query*/
+
+.col{
+  margin-left: 8%;
+}
 .list-services {
   height: 45vh;
   margin-top: 10%;
@@ -557,9 +573,8 @@
     }
   }
 
-/*Services 683 Query*/
-
 }
+
 @media(max-width:550px) {
 
   /*Index 550 Query*/
@@ -758,21 +773,61 @@
   }
 
   /*Services 550 Query*/
-  .list-services {
-    margin-left: 17%;
-    margin-top: -3%;
-
-    h5 {
-      font-size: 1.2em;
+  .row{
+    height: 1%;
+  }
+  .col{
+    margin-left: -5%;
+      margin-top: 2%;
+      width: 90%;
+      height: 5%;
     }
-
+  
+    .card-title {
+      width: 100%;
+      margin-left: 10%;
+      margin-top: 20%;
+      font-size: 1.3em;
+      height: auto;
+    }
+    .design img { 
+      height: 20vh;
+      width:30vh;
+      margin-top: 8%;
+      margin-left: 0%;
+    }
+    .wth{
+      img{
+      margin-left: -8%;
+      width: 25vh;
+      }
+    
+    }
+   
+    .col{
     div {
+      display: flex;
+      flex-direction: vertical; 
+      align-content: horizontal;
+  
       p {
-        font-size: 1em;
+        width:100%;
+        height: 40%;
+        font-size: 0.8rem;
+        margin-top: 15%;
+        margin-left: 1%;
+    
+      } 
+      h5{
+        margin-top: 15%;
+        font-size:1.2rem;
+      }
       }
     }
-  }
-}
+    .list-services {
+      height: 25vh;
+      margin-top: 2%;}
+    }
 
 
 @media(max-width:400px) {
@@ -981,34 +1036,30 @@
 
  
   /*Services 400 Query*/
-  .list-services {
-    margin-top: 5%;
-    margin-left: 10%;
-    padding: 0%;
-
-    h5 {
-      margin-left: 0%;
-      font-size: 0.9em;
+  .col{
+    margin-left: -12%;
     }
-
-    div {
-      p {
-        text-align: center;
-        width: 60%;
-        margin-left: 20%;
-        padding-top: 2%;
-        font-size: 0.8em;
+    .design img { 
+      height: 15vh;
+      width:30vh;
+    }
+    .wth{
+      img{
+      width: 25vh;
       }
     }
-  }
+    .col{
+      div {
+        p {
+     font-size: 0.8rem;
 
-  .design {
-    img {
-      margin-left: 1%;
-      height: 15vh;
-      width: 100px;
-      gap: 2%;
-    }
-  }
-
+        } 
+        h5{
+          font-size:1rem;
+        }
+        }
+      }
+    
 }
+
+
