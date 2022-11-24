@@ -13,7 +13,8 @@
     border-radius: 28px;
     box-shadow: 1px 0.5px 0.5px 1px $shadow;
 
-    li {
+    li{
+      a{
       display: flex;
       justify-content: center;
       margin: 20px 50px 20px 90px;
@@ -21,6 +22,7 @@
       font-size: 1.2em;
       color: $solidcolor;
       list-style: none;
+      text-decoration: none;
 
 
 
@@ -28,6 +30,8 @@
         color: $thirdcolor;
       }
     }
+  }
+  
   }
 }
 

@@ -41,6 +41,14 @@
     width: 100%;
     color: $solidcolor;
   }
+  ul{
+    li{
+     position: relative;
+     float: left;
+     
+    }
+
+  }
 }
 
 .open-menu,
