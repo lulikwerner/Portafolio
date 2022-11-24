@@ -32,6 +32,7 @@
 
 /*Navbar*/
 .nav-bar {
+  z-index: 99;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -228,22 +229,24 @@ footer {
 }
 
 .dropdown_menu {
-  display: block;
+  display: none;
 }
 
-.dropdown_menu {
-  display: relative;
+.menu:hover .dropdown_menu {
+  display: block;
   position: absolute;
   top: 70%;
 }
-.dropdown_menu ul {
+.menu:hover .dropdown_menu ul {
   display: flex;
   flex-direction: column;
   height: 70%;
-  background-color: yellow;
 }
-.dropdown_menu ul li {
+.menu:hover .dropdown_menu ul li {
   overflow: hidden;
+}
+.menu:hover .dropdown_menu ul li a {
+  text-align: left;
 }
 
 .open-menu,

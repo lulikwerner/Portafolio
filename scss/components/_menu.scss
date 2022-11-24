@@ -1,5 +1,6 @@
 /*Menu*/
 .menu {
+  
   display: flex;
   
 
@@ -48,12 +49,12 @@
 
 
 .dropdown_menu{
-  display: block;
+  display: none;
 }
-
+.menu:hover
 .dropdown_menu{
  
-  display: relative;
+  display: block;
   position: absolute;
   top: 70%;
 
@@ -62,13 +63,16 @@
     display: flex;
     flex-direction: column;
    height: 70%;
-   background-color: yellow;
+ 
     li{
       overflow: hidden;
-    
+      a{
+        text-align: left
+      }
 
     }
-  }
+  
+    }
   
 }
 
