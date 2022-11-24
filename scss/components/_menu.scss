@@ -1,13 +1,17 @@
 /*Menu*/
 .menu {
   display: flex;
+  
 
   li {
     padding-left: 30px;
+    float: left;
+
   }
 
   a {
-    display: inline-block;
+    
+    display: block;
     position: relative;
     text-align: center;
     margin: 10px -5% 20px 40px;
@@ -19,10 +23,10 @@
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     visibility: hidden;
+ 
 
-  }
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     height: 1px;
@@ -30,25 +34,42 @@
     bottom: 0;
     left: 0;
     background-color: $solidcolor;
-    transition: 0.15s ease-in-out;
+    transition: 0.30s ease-in-out;
   }
 
   &:hover {
     color: $solidcolor;
-  }
-
-  &hover:after {
+ &:after {
     width: 100%;
     color: $solidcolor;
-  }
-  ul{
-    li{
-     position: relative;
-     float: left;
-     
-    }
+  }}
+} }
+  
 
+
+.dropdown_menu{
+  display: block;
+}
+
+.dropdown_menu{
+ 
+  display: relative;
+  position: absolute;
+  top: 70%;
+
+
+  ul{
+    display: flex;
+    flex-direction: column;
+   height: 70%;
+   background-color: yellow;
+    li{
+      overflow: hidden;
+    
+
+    }
   }
+  
 }
 
 .open-menu,

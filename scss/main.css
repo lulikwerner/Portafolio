@@ -190,9 +190,10 @@ footer {
 }
 .menu li {
   padding-left: 30px;
+  float: left;
 }
 .menu a {
-  display: inline-block;
+  display: block;
   position: relative;
   text-align: center;
   margin: 10px -5% 20px 40px;
@@ -208,7 +209,7 @@ footer {
           animation-fill-mode: forwards;
   visibility: hidden;
 }
-.menu::after {
+.menu a:after {
   content: "";
   position: absolute;
   height: 1px;
@@ -216,18 +217,33 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #fff;
-  transition: 0.15s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.menu:hover {
+.menu a:hover {
   color: #fff;
 }
-.menuhover:after {
+.menu a:hover:after {
   width: 100%;
   color: #fff;
 }
-.menu ul li {
-  position: relative;
-  float: left;
+
+.dropdown_menu {
+  display: block;
+}
+
+.dropdown_menu {
+  display: relative;
+  position: absolute;
+  top: 70%;
+}
+.dropdown_menu ul {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  background-color: yellow;
+}
+.dropdown_menu ul li {
+  overflow: hidden;
 }
 
 .open-menu,
