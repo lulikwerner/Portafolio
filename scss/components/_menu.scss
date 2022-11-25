@@ -43,8 +43,10 @@
  &:after {
     width: 100%;
     color: $solidcolor;
-  }}
-} }
+  }
+}
+} 
+}
   
 
 
@@ -67,13 +69,19 @@
     li{
       overflow: hidden;
       a{
-        text-align: left
+        text-align: left;
+       
+
+        &:after {
+          width: auto;
       }
+      &:hover {
+        color: $solidcolor;
 
     }
-  
     }
-  
+    }
+  } 
 }
 
 .open-menu,

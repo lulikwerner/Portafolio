@@ -248,6 +248,12 @@ footer {
 .menu:hover .dropdown_menu ul li a {
   text-align: left;
 }
+.menu:hover .dropdown_menu ul li a:after {
+  width: auto;
+}
+.menu:hover .dropdown_menu ul li a:hover {
+  color: #fff;
+}
 
 .open-menu,
 .close-menu {
