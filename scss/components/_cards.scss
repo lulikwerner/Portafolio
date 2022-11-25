@@ -7,7 +7,7 @@
     justify-content: center;
 }
 .cardp{
-    margin-top: -20%;
+    margin-top: -25%;
     margin-left: 5%;
     width: 25%;
     height: 50%;
@@ -30,10 +30,10 @@
 }
 .back-face{
     backface-visibility: hidden;
-    background-color: $fourthcolor;
-    color:$thirdcolor;
+    background-color: $listservice;
+    color:$titlec;
     position:absolute;
-    height: 31vh;
+    height: 42vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -110,9 +110,9 @@
     
   
     &:hover {
-      color: $thirdcolor;
-      border: 1px solid $thirdcolor;
-      animation: pulsate 4s;
+      color: $colorp;
+      border: 1px solid $colorp;
+      
 }
 }
 .cardp:hover .card-inner{

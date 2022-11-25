@@ -233,6 +233,7 @@ footer {
 }
 
 .menu:hover .dropdown_menu {
+  cursor: pointer;
   display: block;
   position: absolute;
   top: 70%;
@@ -263,7 +264,7 @@ footer {
   font-size: 1.5rem;
 }
 
-.open-menu {
+.open-menu ul li {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
@@ -852,7 +853,7 @@ footer div img {
 }
 
 .cardp {
-  margin-top: -20%;
+  margin-top: -25%;
   margin-left: 5%;
   width: 25%;
   height: 50%;
@@ -880,10 +881,10 @@ footer div img {
 .back-face {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background-color: #5a0c59;
-  color: #AB3EA6;
+  background-color: #43D0B8;
+  color: yellow;
   position: absolute;
-  height: 31vh;
+  height: 42vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -960,10 +961,8 @@ footer div img {
   color: #fff;
 }
 .pyth-btn:hover {
-  color: #AB3EA6;
-  border: 1px solid #AB3EA6;
-  -webkit-animation: pulsate 4s;
-          animation: pulsate 4s;
+  color: rgb(198, 37, 220);
+  border: 1px solid rgb(198, 37, 220);
 }
 
 .cardp:hover .card-inner {
