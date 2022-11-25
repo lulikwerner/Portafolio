@@ -117,11 +117,12 @@
   /*Portafolio 1024 Query*/
   .project-cont {
     margin-left: -5%;
-    height: 30vh;
+    height: 10vh;
 
     ul {
+      margin-top: 4%;
       width: 110%;
-      margin-left: 2%;
+      margin-left: 0%;
 
       li {
         margin-left: 3%;
@@ -131,14 +132,16 @@
 
     h1 {
       margin-left: 3%;
-      font-size: 1.5em;
+      font-size: 2.6em;
+
     }
   }
 
   #slider {
-    height: 50vh;
-    margin-top: -3%;
-    margin-left: -3%;
+    height: 60vh;
+    width: 100%;
+    margin-top: 12%;
+    margin-left: 2%;
 
 
   }
@@ -185,6 +188,34 @@
   margin-top: -3%;
   width: 150%;
 }
+/*Cards 1024 Query*/
+
+.cardp{
+  margin-top: 15%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 60%;
+  height: 45%;
+ 
+}
+.front-face{
+
+  img{
+      width: 100%;
+      height: 44vh;
+      border-radius: 10px;
+}
+}
+.pyth-btn{    
+width: 70%;
+  padding: 10px 20px 10px 20px;
+a{
+  padding-left: 0%;
+}
+  
+
+}
+
 }
 @media(max-width:850px) {
 
@@ -363,26 +394,35 @@
 
     h1 {
       margin-top: 3%;
-      margin-left: 0%;
-      font-size: 1.4em;
+      margin-left: 2%;
+      font-size: 2.6em;
+      
     }
 
     ul {
-      width: 110%;
-      margin-left: 0%;
+      width: 90%;
+      margin-left: 5%;
       font-size: 0.9em;
+      li{
+        width: 40%;
+        margin-left: -3%;
+      }
     }
   }
 
   #slider {
     height: 50vh;
-    width: 90%;
-    margin-top: 1%;
-    margin-left: 2%;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: -10%;
     transition: 1s ease-in-out;
-
     &:hover {
       transform: scale(1.2);
+    }
+    img{
+      width: 150%;
+      height: auto;
+      
     }
   }
 
@@ -492,9 +532,9 @@
 
 
 
-/*Menu 683 Query*/
-@media(max-width:683px) {
 
+@media(max-width:683px) {
+/*Menu 683 Query*/
   .menu {
     flex-direction: column;
     align-items: center;
@@ -674,6 +714,36 @@
   .list-services {
     height: 25vh;
     margin-top: 2%;}
+  
+  /*Portafolio 683 Query*/
+  .project-cont {
+    width: 70%;
+    h1 {
+      margin-left: 28%;
+      font-size: 2.4em;
+      width: 80%;
+    }
+
+    ul {
+      width: 70%;
+      margin-left: 30%;
+     
+      li{
+        margin-left: -10%;
+      }
+    }
+  }
+
+  #slider {
+    height: 50vh;
+    width: 100%;
+    margin-top: 5%;
+   
+    img{
+      height: 40vh;
+      width: 150%;
+    }
+  }
   }
 
 
@@ -802,34 +872,37 @@
 
   /*Portafolio 550 Query*/
   .project-cont {
-    height: 6vh;
-    font-size: 0.8em;
-    margin-top: -5%;
-
+   
+    width: 60%;
     ul {
-      width: 100%;
-      text-align: center;
-      margin-left: 0%;
+      display: flex;
+      justify-content: center;
+      width: 85%;
+      margin-left: 38%;
+      padding-right: 0%;
 
       li {
-        margin-top: 8%;
-        margin-left: 3%;
-        font-size: 0.90em;
+        margin-top: 1%;
+        margin-left: 1%;
+        font-size: 0.8em;
+        
+        a{
+          margin-left: 0%;
+        }
       }
     }
-
     h1 {
-      margin-top: 10%;
-      margin-left: 0%;
-      font-size: 1.4em;
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 40%;
+      font-size: 1.8em;
     }
   }
 
   #slider {
-    margin-top: 32%;
-    margin-left: -5%;
-    height: 50%;
-    width: 100%;
+    margin-top: -5%;
+    margin-left: -9%;
+
   }
 
   /*About 550 Query*/
@@ -1082,36 +1155,28 @@
   /*Portafolio 400 Query*/
   .project-cont {
     height: 20vh;
-
-
+    h1 {
+      font-size: 1.6em;
+      margin-left: 38%;
+    }
     ul {
       height: 40%;
-      width: 90%;
-      margin-left: 6%;
+      margin-left: 35%;
 
       li {
         font-size: 0.8em;
-        margin-top: 8%;
         margin-left: 2%;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 1.4em;
-
+        
       }
     }
   }
 
   #slider {
-    height: 45vh;
-    width: 100%;
-    margin-top: 20%;
-    margin-left: -5%;
 
-    &:hover {
-      transform: scale(1.2);
-    }
+    margin-top: 10%;
+    margin-left: -10%;
+
+
   }
 
  
