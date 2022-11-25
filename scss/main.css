@@ -1359,19 +1359,22 @@ footer div img {
     padding: 10px;
   }
   .menu:hover .dropdown_menu {
-    display: block;
     position: static;
     top: 50%;
+    display: block;
   }
   .menu:hover .dropdown_menu ul {
-    display: block;
+    display: flex;
     flex-direction: column;
   }
   .menu:hover .dropdown_menu ul li {
     overflow: hidden;
+    flex-direction: column;
   }
   .menu:hover .dropdown_menu ul li a {
+    text-align: center;
     margin-top: 2%;
+    justify-content: left;
   }
   .menu:hover .dropdown_menu ul li a:after {
     width: auto;

@@ -522,23 +522,25 @@
   .menu:hover
   .dropdown_menu{
    
-    display: block;
+   
     position: static;
     top: 50%;
-    
+    display: block;
+  
   
     ul{
-      display: block;
-     
+      display: flex;
       flex-direction: column;
-   
+      
+ 
       li{
-        overflow: hidden;
         
+        overflow: hidden;
+        flex-direction: column;
         a{
-       
+          text-align: center;
           margin-top: 2%;
-         
+          justify-content: left;
   
           &:after {
             width: auto;
