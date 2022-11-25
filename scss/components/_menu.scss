@@ -45,24 +45,32 @@
 } 
 }
   
+.submenu{
+  display: flex;
+  li {
+    padding-left: 30px;
+    float: left;
 
+  }
+}
 
 .dropdown_menu{
   display: none;
   
 }
-.menu:hover
+.submenu:hover
 .dropdown_menu{
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 70%;
+ 
 
 
   ul{
     display: flex;
     flex-direction: column;
    height: 70%;
+   margin-top: -5%;
  
     li{
       overflow: hidden;

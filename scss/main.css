@@ -228,31 +228,39 @@ footer {
   color: #fff;
 }
 
+.submenu {
+  display: flex;
+}
+.submenu li {
+  padding-left: 30px;
+  float: left;
+}
+
 .dropdown_menu {
   display: none;
 }
 
-.menu:hover .dropdown_menu {
+.submenu:hover .dropdown_menu {
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 70%;
 }
-.menu:hover .dropdown_menu ul {
+.submenu:hover .dropdown_menu ul {
   display: flex;
   flex-direction: column;
   height: 70%;
+  margin-top: -5%;
 }
-.menu:hover .dropdown_menu ul li {
+.submenu:hover .dropdown_menu ul li {
   overflow: hidden;
 }
-.menu:hover .dropdown_menu ul li a {
+.submenu:hover .dropdown_menu ul li a {
   text-align: left;
 }
-.menu:hover .dropdown_menu ul li a:after {
+.submenu:hover .dropdown_menu ul li a:after {
   width: auto;
 }
-.menu:hover .dropdown_menu ul li a:hover {
+.submenu:hover .dropdown_menu ul li a:hover {
   color: #fff;
 }
 
@@ -1357,34 +1365,53 @@ footer div img {
   .menu li a {
     padding: 10px;
   }
-  .menu:hover .dropdown_menu {
+  .submenu {
+    display: flex;
+  }
+  .submenu li {
+    padding-left: 30px;
+    float: left;
+  }
+  .dropdown_menu {
+    display: none;
+  }
+  .submenu:hover .dropdown_menu {
     position: static;
     top: 50%;
     display: block;
   }
-  .menu:hover .dropdown_menu ul {
+  .submenu:hover .dropdown_menu ul {
     display: flex;
     flex-direction: column;
   }
-  .menu:hover .dropdown_menu ul li {
+  .submenu:hover .dropdown_menu ul li {
     overflow: hidden;
     flex-direction: column;
     margin-left: 5%;
     width: 70%;
   }
-  .menu:hover .dropdown_menu ul li a {
+  .submenu:hover .dropdown_menu ul li a {
     text-align: center;
     margin-top: 2%;
   }
-  .menu:hover .dropdown_menu ul li a:after {
+  .submenu:hover .dropdown_menu ul li a:after {
     width: auto;
   }
-  .menu:hover .dropdown_menu ul li a:hover {
+  .submenu:hover .dropdown_menu ul li a:hover {
     color: #fff;
   }
   .open-menu,
 .close-menu {
+    position: absolute;
     display: block;
+  }
+  .open-menu {
+    position: relative;
+  }
+  .open-menu ul li {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
   }
   #check:checked ~ .menu {
     right: 0;

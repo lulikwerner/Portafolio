@@ -495,7 +495,6 @@
 /*Menu 683 Query*/
 @media(max-width:683px) {
 
-
   .menu {
     flex-direction: column;
     align-items: center;
@@ -519,7 +518,20 @@
       }
     }
   }
-  .menu:hover
+  .submenu{
+    display: flex;
+    li {
+      padding-left: 30px;
+      float: left;
+  
+    }
+  }
+  
+  .dropdown_menu{
+    display: none;
+    
+  }
+  .submenu:hover
   .dropdown_menu{
    
    
@@ -558,9 +570,17 @@
     
   .open-menu,
   .close-menu {
+    position: absolute;
     display: block;
   }
-
+  .open-menu {
+    position: relative;
+    ul{
+      li{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }}}
   #check:checked~.menu {
     right: 0;
   }
