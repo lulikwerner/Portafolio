@@ -1112,7 +1112,7 @@ footer div img {
     height: 10vh;
   }
   .project-cont ul {
-    margin-top: 4%;
+    margin-top: 0%;
     width: 110%;
     margin-left: 0%;
   }
@@ -1121,6 +1121,7 @@ footer div img {
     font-size: 1em;
   }
   .project-cont h1 {
+    margin-top: 0%;
     margin-left: 3%;
     font-size: 2.6em;
   }
@@ -1166,12 +1167,12 @@ footer div img {
     width: 150%;
   }
   /*Cards 1024 Query*/
+  .menup {
+    width: 100%;
+    height: 90vh;
+  }
   .cardp {
-    margin-top: 15%;
-    margin-left: 3%;
-    margin-right: 3%;
-    width: 60%;
-    height: 45%;
+    margin-top: 12%;
   }
   .front-face img {
     width: 100%;
@@ -1184,6 +1185,16 @@ footer div img {
   }
   .pyth-btn a {
     padding-left: 0%;
+  }
+  .back-face {
+    height: 45vh;
+  }
+  .back-face h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .centered {
+    font-size: 3.5em;
   }
 }
 @media (max-width: 850px) {
