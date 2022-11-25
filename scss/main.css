@@ -1370,11 +1370,12 @@ footer div img {
   .menu:hover .dropdown_menu ul li {
     overflow: hidden;
     flex-direction: column;
+    margin-left: 5%;
+    width: 70%;
   }
   .menu:hover .dropdown_menu ul li a {
     text-align: center;
     margin-top: 2%;
-    justify-content: left;
   }
   .menu:hover .dropdown_menu ul li a:after {
     width: auto;
