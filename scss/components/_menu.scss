@@ -1,9 +1,6 @@
 /*Menu*/
 .menu {
-  
   display: flex;
-  
-
   li {
     padding-left: 30px;
     float: left;
@@ -11,11 +8,10 @@
   }
 
   a {
-    
     display: block;
     position: relative;
     text-align: center;
-    margin: 10px -5% 20px 40px;
+    margin: 10px -5% 20px 30px;
     font-size: medium;
     color: $solidbutton;
     text-decoration: none;

@@ -494,13 +494,14 @@
 
 /*Menu 683 Query*/
 @media(max-width:683px) {
+
+
   .menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
     height: 100vh;
-
     width: 80%;
     top: 0;
     right: -100%;
@@ -518,7 +519,39 @@
       }
     }
   }
-
+  .menu:hover
+  .dropdown_menu{
+   
+    display: block;
+    position: static;
+    top: 50%;
+    
+  
+    ul{
+      display: block;
+     
+      flex-direction: column;
+   
+      li{
+        overflow: hidden;
+        
+        a{
+       
+          margin-top: 2%;
+         
+  
+          &:after {
+            width: auto;
+        }
+        &:hover {
+          color: $solidcolor;
+  
+      }
+      }
+      }
+    } 
+  }
+    
   .open-menu,
   .close-menu {
     display: block;
@@ -575,15 +608,15 @@
 /*Services 683 Query*/
 
 .col{
-  margin-left: -5%;
+  margin-left: -12%;
     margin-top: 2%;
     width: 90%;
     height: 5%;
   }
 
   .design img { 
-    height: 20vh;
-    width:45vh;
+    height: 15vh;
+    width:40vh;
     margin-top: 8%;
     margin-left: 6%;
   }

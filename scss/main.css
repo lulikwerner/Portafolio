@@ -197,7 +197,7 @@ footer {
   display: block;
   position: relative;
   text-align: center;
-  margin: 10px -5% 20px 40px;
+  margin: 10px -5% 20px 30px;
   font-size: medium;
   color: #30c4ab;
   text-decoration: none;
@@ -1358,6 +1358,27 @@ footer div img {
   .menu li a {
     padding: 10px;
   }
+  .menu:hover .dropdown_menu {
+    display: block;
+    position: static;
+    top: 50%;
+  }
+  .menu:hover .dropdown_menu ul {
+    display: block;
+    flex-direction: column;
+  }
+  .menu:hover .dropdown_menu ul li {
+    overflow: hidden;
+  }
+  .menu:hover .dropdown_menu ul li a {
+    margin-top: 2%;
+  }
+  .menu:hover .dropdown_menu ul li a:after {
+    width: auto;
+  }
+  .menu:hover .dropdown_menu ul li a:hover {
+    color: #fff;
+  }
   .open-menu,
 .close-menu {
     display: block;
@@ -1398,14 +1419,14 @@ footer div img {
   }
   /*Services 683 Query*/
   .col {
-    margin-left: -5%;
+    margin-left: -12%;
     margin-top: 2%;
     width: 90%;
     height: 5%;
   }
   .design img {
-    height: 20vh;
-    width: 45vh;
+    height: 15vh;
+    width: 40vh;
     margin-top: 8%;
     margin-left: 6%;
   }
