@@ -20,20 +20,61 @@
     text-align: center;
     transform-style: preserve-3d;
     transition: transform 1s;
+
+
 }
 .front-face{
+    background: linear-gradient(-45deg, $listservice, $colorcardfro);
+    color: #fff;
+    border-radius: 10px;
     backface-visibility: hidden;
     img{
         width: 100%;
+        height: 44vh;
         border-radius: 10px;
-    }
 }
+}
+.centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5em;
+
+        
+      }
+.animated{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+     -225deg,
+     $primarycolor 0%,
+     $titlec 29%,
+     $principal 67%,
+     $listservice 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: $solidcolor;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 3s linear infinite;
+   display: inline-block;
+  
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+ }
 .back-face{
     backface-visibility: hidden;
-    background-color: $listservice;
+    background-color: $colorcard;
     color:$titlec;
     position:absolute;
-    height: 42vh;
+    height: 44.5vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -54,6 +95,7 @@
         width: 80%;
         color: $solidcolor;
     }
+  
 }
 .front-face{
     backface-visibility: hidden;
@@ -61,6 +103,11 @@
         width: 100%;
         border-radius: 10px;
     }
+}
+    .centered{
+        backface-visibility: hidden;
+     
+ 
 }
 .back-face-p{
     backface-visibility: hidden;
