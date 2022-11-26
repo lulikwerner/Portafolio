@@ -1750,14 +1750,23 @@ footer div img {
     font-size: 0.75em;
   }
   /*Portafolio 550 Query*/
+  .frit {
+    width: 100%;
+    height: 180vh;
+    grid-template-rows: 6% 10% 80%;
+  }
   .project-cont {
     width: 60%;
+  }
+  .project-cont h1 {
+    width: 80%;
+    margin-left: 40%;
+    font-size: 1.8em;
   }
   .project-cont ul {
     display: flex;
     justify-content: center;
-    width: 85%;
-    margin-left: 45%;
+    width: 98%;
     padding-right: 0%;
     margin-top: 10%;
   }
@@ -1769,41 +1778,39 @@ footer div img {
   .project-cont ul li a {
     margin-left: 0%;
   }
-  .project-cont h1 {
-    width: 80%;
-    margin-top: 5%;
-    margin-left: 50%;
-    font-size: 1.8em;
-  }
   #slider {
-    margin-top: -5%;
+    height: 100%;
+    margin-top: 5%;
     margin-left: -9%;
   }
   /*Cards 550 Query*/
   .menup {
     grid-template-areas: "card6" "card7" "card8";
-    height: 150vh;
+    height: 160vh;
     width: 100%;
+    margin-top: -4%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 30%);
   }
   .card1 {
     grid-area: card6;
     width: 60%;
-    justify-content: center;
+    margin-left: 18%;
   }
   .centered {
-    font-size: 4em;
+    font-size: 3em;
   }
   .card2 {
     grid-area: card7;
     width: 60%;
-    margin-left: 20%;
+    margin-top: 3%;
+    margin-left: 18%;
   }
   .card3 {
     grid-area: card8;
-    margin-top: 0%;
     width: 60%;
+    margin-top: 5%;
+    margin-left: 18%;
   }
   /*About 550 Query*/
   .about-abt {
