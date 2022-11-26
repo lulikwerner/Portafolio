@@ -1127,8 +1127,8 @@ footer div img {
   }
   #slider {
     height: 60vh;
-    width: 100%;
-    margin-top: 12%;
+    width: 90%;
+    margin-top: 10%;
     margin-left: 2%;
   }
   /*About 1024 Query*/
@@ -2000,16 +2000,12 @@ footer div img {
     margin-left: 38%;
   }
   .project-cont ul {
-    height: 40%;
+    width: 85%;
     margin-left: 35%;
   }
   .project-cont ul li {
-    font-size: 0.8em;
-    margin-left: 2%;
-  }
-  #slider {
-    margin-top: 10%;
-    margin-left: -10%;
+    font-size: 0.6em;
+    margin-left: 5%;
   }
   /*Services 400 Query*/
   .col {
