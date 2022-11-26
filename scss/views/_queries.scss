@@ -191,45 +191,49 @@
 }
 /*Cards 1024 Query*/
 .menup{
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+  height: 100vh;
   width: 100%;
-  height: 90vh;
 
+  font-family: 'Montserrat', sans-serif;
 }
 .cardp{
-  margin-top: 12%;
-
+margin-left: -10%;
+margin-top: 50%;
 }
-.front-face{
-
-  img{
-      width: 100%;
-      height: 44vh;
-      border-radius: 10px;
-}
-}
-.pyth-btn{    
-width: 70%;
-  padding: 10px 20px 10px 20px;
-a{
-  padding-left: 0%;
-}
-}
-.back-face{
-
-  height: 45vh;
-
-  h2{
-      font-size: 1.5em;
-      font-weight:400;
-  }
-
+  .card1{
+  grid-area: card1;
+  width: 100%;
 }
 .centered {
-  
-  font-size: 3.5em;
-
-  
+  font-size: 4em; 
 }
+.card2{
+  grid-area: card2;
+  margin-left: 0%;
+  width: 100%;
+}
+.card3{
+  grid-area: card3;
+  margin-left: 10%;
+  width: 100%;
+}
+.back-face{
+  h2{
+    margin-top: -10%;
+  }
+  p{
+    margin-top: 8%;
+  }
+}
+.wrap-pyth{    
+margin-top: 5%;
+}
+.pyth-btn{    
+  width: 90%;
+}
+
 }
 @media(max-width:850px) {
 
@@ -403,23 +407,39 @@ a{
   }
 
   /*Portafolio 850 Query*/
+  .frit{
+    display: grid;
+    grid-template-areas: "titlepr"
+                          "optpr"
+                          "cardpr";
+
+    height: 130vh;
+    width: 100%;
+    grid-template-rows: 8% 12% 80% ;
+    font-family: 'Montserrat', sans-serif;
+  }
   .project-cont {
     height: 30vh;
 
     h1 {
+      grid-area: titlepr;
       margin-top: 3%;
-      margin-left: 2%;
+      justify-content: center;
       font-size: 2.6em;
       
     }
 
     ul {
       width: 90%;
-      margin-left: 5%;
+      margin-top: 5%;
       font-size: 0.9em;
+      margin-left: 5%;
       li{
-        width: 40%;
-        margin-left: -3%;
+        grid-area: optpr;
+        width: 100%;
+        justify-content: center;
+       margin-left: -9%;
+       
       }
     }
   }
@@ -439,7 +459,38 @@ a{
       
     }
   }
-
+/*Cards 850 Query*/
+.menup{
+  grid-area: cardpr;
+  margin-top: 6%;
+    display: grid;
+    grid-template-areas: "card1   card2"
+                          "card3  card4";
+    height: 110vh;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 40%) ;
+    font-family: 'Montserrat', sans-serif;
+}
+.cardp{
+  margin-left: 15%;
+  margin-top: 0%;
+}
+    .card1{
+    grid-area: card1;
+    width: 80%;
+ 
+  } 
+  .card2{
+    grid-area: card2;
+    width: 80%;
+    margin-left: 5%;
+  }
+  .card3{
+    grid-area: card3;
+    margin-top: 10%;
+    width: 80%;
+  }
   /*About 850 Query*/
   .about-abt {
     grid-template-areas: "title3"
@@ -507,7 +558,7 @@ a{
   }
 }
 
-}
+
 
 /*Services 850 Query*/
 
@@ -543,7 +594,7 @@ a{
   margin-top: 8%;
   margin-left: 40%;
 }
-
+}
 
 
 
@@ -758,7 +809,10 @@ a{
       width: 150%;
     }
   }
-  }
+
+
+}
+  
 
 
 
@@ -892,8 +946,9 @@ a{
       display: flex;
       justify-content: center;
       width: 85%;
-      margin-left: 38%;
+      margin-left: 45%;
       padding-right: 0%;
+      margin-top: 10%;
 
       li {
         margin-top: 1%;
@@ -908,7 +963,7 @@ a{
     h1 {
       width: 80%;
       margin-top: 5%;
-      margin-left: 40%;
+      margin-left: 50%;
       font-size: 1.8em;
     }
   }
@@ -918,7 +973,40 @@ a{
     margin-left: -9%;
 
   }
+  /*Cards 550 Query*/
 
+  .menup{
+    grid-template-areas: "card6"
+                         "card7"
+                         "card8";
+    height: 150vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,30%) ; 
+  }
+    .card1{
+    grid-area: card6;
+    width: 60%;
+    justify-content: center;
+    
+  }
+  .centered {
+    font-size: 4em; 
+  }
+  .card2{
+    grid-area: card7; 
+    width: 60%;
+    margin-left: 20%;
+   
+  }
+  .card3{
+    grid-area: card8;
+   margin-top: 0%;
+    width: 60%;
+  
+  }
+
+  
   /*About 550 Query*/
   .about-abt {
     grid-template-rows: 5% 7% 5% 40% 35% 10%;

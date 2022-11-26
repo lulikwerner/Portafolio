@@ -630,7 +630,7 @@ footer div img {
 .project-cont ul li a {
   display: flex;
   justify-content: center;
-  margin: 20px 50px 20px 90px;
+  margin: 20px 50px 20px 50px;
   font-weight: 100;
   font-size: 1.2em;
   color: #fff;
@@ -896,10 +896,10 @@ footer div img {
 
 .centered {
   position: absolute;
-  top: 54%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .animated {
@@ -987,8 +987,8 @@ footer div img {
 }
 .back-face-p h2 {
   margin-top: -15%;
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.8em;
+  font-weight: 300;
 }
 .back-face-p p {
   margin-top: 3%;
@@ -1168,33 +1168,44 @@ footer div img {
   }
   /*Cards 1024 Query*/
   .menup {
+    display: grid;
+    grid-template-areas: "card1 card2 card3";
+    height: 100vh;
     width: 100%;
-    height: 90vh;
+    font-family: "Montserrat", sans-serif;
   }
   .cardp {
-    margin-top: 12%;
+    margin-left: -10%;
+    margin-top: 50%;
   }
-  .front-face img {
+  .card1 {
+    grid-area: card1;
     width: 100%;
-    height: 44vh;
-    border-radius: 10px;
-  }
-  .pyth-btn {
-    width: 70%;
-    padding: 10px 20px 10px 20px;
-  }
-  .pyth-btn a {
-    padding-left: 0%;
-  }
-  .back-face {
-    height: 45vh;
-  }
-  .back-face h2 {
-    font-size: 1.5em;
-    font-weight: 400;
   }
   .centered {
-    font-size: 3.5em;
+    font-size: 4em;
+  }
+  .card2 {
+    grid-area: card2;
+    margin-left: 0%;
+    width: 100%;
+  }
+  .card3 {
+    grid-area: card3;
+    margin-left: 10%;
+    width: 100%;
+  }
+  .back-face h2 {
+    margin-top: -10%;
+  }
+  .back-face p {
+    margin-top: 8%;
+  }
+  .wrap-pyth {
+    margin-top: 5%;
+  }
+  .pyth-btn {
+    width: 90%;
   }
 }
 @media (max-width: 850px) {
@@ -1314,22 +1325,34 @@ footer div img {
     margin-left: 20%;
   }
   /*Portafolio 850 Query*/
+  .frit {
+    display: grid;
+    grid-template-areas: "titlepr" "optpr" "cardpr";
+    height: 130vh;
+    width: 100%;
+    grid-template-rows: 8% 12% 80%;
+    font-family: "Montserrat", sans-serif;
+  }
   .project-cont {
     height: 30vh;
   }
   .project-cont h1 {
+    grid-area: titlepr;
     margin-top: 3%;
-    margin-left: 2%;
+    justify-content: center;
     font-size: 2.6em;
   }
   .project-cont ul {
     width: 90%;
-    margin-left: 5%;
+    margin-top: 5%;
     font-size: 0.9em;
+    margin-left: 5%;
   }
   .project-cont ul li {
-    width: 40%;
-    margin-left: -3%;
+    grid-area: optpr;
+    width: 100%;
+    justify-content: center;
+    margin-left: -9%;
   }
   #slider {
     height: 50vh;
@@ -1344,6 +1367,36 @@ footer div img {
   #slider img {
     width: 150%;
     height: auto;
+  }
+  /*Cards 850 Query*/
+  .menup {
+    grid-area: cardpr;
+    margin-top: 6%;
+    display: grid;
+    grid-template-areas: "card1   card2" "card3  card4";
+    height: 110vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    font-family: "Montserrat", sans-serif;
+  }
+  .cardp {
+    margin-left: 15%;
+    margin-top: 0%;
+  }
+  .card1 {
+    grid-area: card1;
+    width: 80%;
+  }
+  .card2 {
+    grid-area: card2;
+    width: 80%;
+    margin-left: 5%;
+  }
+  .card3 {
+    grid-area: card3;
+    margin-top: 10%;
+    width: 80%;
   }
   /*About 850 Query*/
   .about-abt {
@@ -1400,39 +1453,36 @@ footer div img {
     margin-left: 0%;
     font-size: 1em;
   }
+  /*Services 850 Query*/
+  .col {
+    margin-left: 8%;
+  }
+  .list-services {
+    height: 45vh;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .list-services h5 {
+    margin-left: 20%;
+    font-size: 1.5em;
+  }
+  .list-services div {
+    width: 100%;
+    margin-left: 1%;
+  }
+  .list-services div p {
+    width: 90%;
+    font-size: 1.2em;
+    margin-top: 4%;
+    margin-left: 25%;
+  }
+  .design img {
+    height: 15vh;
+    width: 20vh;
+    margin-top: 8%;
+    margin-left: 40%;
+  }
 }
-/*Services 850 Query*/
-.col {
-  margin-left: 8%;
-}
-
-.list-services {
-  height: 45vh;
-  margin-top: 10%;
-  margin-left: 5%;
-}
-.list-services h5 {
-  margin-left: 20%;
-  font-size: 1.5em;
-}
-.list-services div {
-  width: 100%;
-  margin-left: 1%;
-}
-.list-services div p {
-  width: 90%;
-  font-size: 1.2em;
-  margin-top: 4%;
-  margin-left: 25%;
-}
-
-.design img {
-  height: 15vh;
-  width: 20vh;
-  margin-top: 8%;
-  margin-left: 40%;
-}
-
 @media (max-width: 683px) {
   /*Menu 683 Query*/
   .menu {
@@ -1696,8 +1746,9 @@ footer div img {
     display: flex;
     justify-content: center;
     width: 85%;
-    margin-left: 38%;
+    margin-left: 45%;
     padding-right: 0%;
+    margin-top: 10%;
   }
   .project-cont ul li {
     margin-top: 1%;
@@ -1710,12 +1761,38 @@ footer div img {
   .project-cont h1 {
     width: 80%;
     margin-top: 5%;
-    margin-left: 40%;
+    margin-left: 50%;
     font-size: 1.8em;
   }
   #slider {
     margin-top: -5%;
     margin-left: -9%;
+  }
+  /*Cards 550 Query*/
+  .menup {
+    grid-template-areas: "card6" "card7" "card8";
+    height: 150vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 30%);
+  }
+  .card1 {
+    grid-area: card6;
+    width: 60%;
+    justify-content: center;
+  }
+  .centered {
+    font-size: 4em;
+  }
+  .card2 {
+    grid-area: card7;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .card3 {
+    grid-area: card8;
+    margin-top: 0%;
+    width: 60%;
   }
   /*About 550 Query*/
   .about-abt {
