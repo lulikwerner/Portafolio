@@ -22,7 +22,7 @@ margin-left: -5%;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0%;
     font-weight: 400;
     font-size: 2.6em;
     color: $thirdcolor;
@@ -39,7 +39,6 @@ margin-left: -5%;
   font-weight: 200;
   font-size: 1.7em;
 }
-
 .name {
   grid-area: name;
   text-align: center;
@@ -49,7 +48,6 @@ margin-left: -5%;
   font-size: 3em;
   color: $principal;
 }
-
 .motus {
   grid-area: motus;
   display: flex;
