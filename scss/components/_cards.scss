@@ -1,169 +1,154 @@
 /*cards*/
-.menup{
+.menup {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0%;
+}
+.cardp {
+  margin-top: -4%;
+  margin-left: 5%;
+  width: 25%;
+  height: 90%;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.front-face {
+  background: linear-gradient(-45deg, $listservice, $colorcardfro);
+  color: $solidcolor;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  img {
     width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0%;
-}
-.cardp{
-    margin-top: -4%;
-    margin-left: 5%;
-    width: 25%;
-    height: 90%;
-    perspective: 1000px;
-    cursor: pointer;
-}
-.card-inner{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-
-
-}
-.front-face{
-    background: linear-gradient(-45deg, $listservice, $colorcardfro);
-    color: $solidcolor;
+    height: 40vh;
     border-radius: 10px;
-    backface-visibility: hidden;
-    img{
-        width: 100%;
-        height: 40vh;
-        border-radius: 10px;
-}
+  }
 }
 .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 4em;
-      }
-.animated{
-    text-transform: uppercase;
-   background-image: linear-gradient(
-     -225deg,
-     $primarycolor 0%,
-     $titlec 29%,
-     $principal 67%,
-     $listservice 100%
-   );
-   background-size: auto auto;
-   background-clip: border-box;
-   background-size: 200% auto;
-   color: $solidcolor;
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   animation: textclip 3s linear infinite;
-   display: inline-block;
-  
- }
- 
- @keyframes textclip {
-   to {
-     background-position: 200% center;
-   }
- }
-.back-face{
-    backface-visibility: hidden;
-    background-color: $colorcard;
-    color:$titlec;
-    position:absolute;
-    height: 40vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    transform: rotateY(180deg);
-    h2{
-        margin-top: 2%;
-        font-size: 2em;
-        font-weight:600;
-    }
-    p{
-        
-        margin-top: 8%;
-        margin-left: 10%;
-        width: 80%;
-        color: $solidcolor;
-    }
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
 }
-.front-face{
-    backface-visibility: hidden;
-    img{
-        width: 100%;
-        border-radius: 10px;
-    }
+.animated {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    $primarycolor 0%,
+    $titlec 29%,
+    $principal 67%,
+    $listservice 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: $solidcolor;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
 }
-    .centered{
-        backface-visibility: hidden;
-     
- 
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
-.back-face-p{
-    backface-visibility: hidden;
-   
-    color:$thirdcolor;
-    position:absolute;
-    height: 31vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    transform: rotateY(180deg);
-    h2{
-        margin-top: -15%;
-        font-size: 1.8em; 
-        font-weight:300;
-    }
-    p{
-        
-        margin-top: 3%;
-        margin-left: 10%;
-        width: 80%;
-        color: $solidcolor;
-    }
-}
-.wrap-pyth{
-    height: 6vh;
+.back-face {
+  backface-visibility: hidden;
+  background-color: $colorcard;
+  color: $titlec;
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  h2 {
+    margin-top: 2%;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  p {
     margin-top: 8%;
-   
-    a{ 
-    text-align: center;
-    text-decoration: none;  
-   
-}
-}
-
-
-
-.pyth-btn{    
-    text-decoration: none;
-    padding: 10px 30px;
-    border: 1px solid $solidcolor;
-    border-radius: 30px;
-    text-decoration: none;
-    width: 53%;
+    margin-left: 10%;
+    width: 80%;
     color: $solidcolor;
-    background-color: $colorcard;
-  
-    &:hover {
-      color: $colorp;
-      border: 1px solid $colorp;
-      
+  }
 }
+.front-face {
+  backface-visibility: hidden;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
-.cardp:hover .card-inner{
-    transform: rotateY(-180deg);
+.centered {
+  backface-visibility: hidden;
+}
+.back-face-p {
+  backface-visibility: hidden;
+  color: $thirdcolor;
+  position: absolute;
+  height: 31vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  h2 {
+    margin-top: -15%;
+    font-size: 1.8em;
+    font-weight: 300;
+  }
+  p {
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 80%;
+    color: $solidcolor;
+  }
+}
+.wrap-pyth {
+  height: 6vh;
+  margin-top: 8%;
+  a {
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.pyth-btn {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid $solidcolor;
+  border-radius: 30px;
+  text-decoration: none;
+  width: 53%;
+  color: $solidcolor;
+  background-color: $colorcard;
+
+  &:hover {
+    color: $colorp;
+    border: 1px solid $colorp;
+  }
+}
+.cardp:hover & .card-inner {
+  transform: rotateY(-180deg);
 }

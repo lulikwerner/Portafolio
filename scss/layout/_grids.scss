@@ -1,7 +1,8 @@
 /*Index Grids*/
 .content {
   display: grid;
-  grid-template-areas: "title   photos"
+  grid-template-areas:
+    "title   photos"
     "legend  photos"
     "button  photos";
   grid-template-columns: 1fr 3fr;
@@ -10,7 +11,7 @@
   margin-left: 2%;
   padding: 5%;
   color: $solidcolor;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   animation: slideleft 1s linear forwards;
   animation-delay: 1.6s;
   visibility: hidden;
@@ -31,7 +32,8 @@
 /*Contact Form Grids*/
 .split-screen {
   display: grid;
-  grid-template-areas: "title contact2"
+  grid-template-areas:
+    "title contact2"
     "info3 contact2";
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 20% 80%;
@@ -39,7 +41,7 @@
   margin-left: 10%;
   height: 60vh;
   width: 70%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
   border: 1px solid $solidcolor;
   border-radius: 30px 30px 30px 30px;
@@ -53,7 +55,8 @@
 /*About Grids*/
 .about-abt {
   display: grid;
-  grid-template-areas: "picture   title2"
+  grid-template-areas:
+    "picture   title2"
     "picture   name"
     "picture   motus"
     "picture   description"
@@ -62,7 +65,7 @@
   grid-template-rows: repeat(3, 10%) 30% 20%;
   height: 90vh;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: $solidcolor;
   animation: moveright 4s linear;
 }

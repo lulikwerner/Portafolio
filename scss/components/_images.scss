@@ -1,128 +1,128 @@
 /*Navbar logo*/
 .logo img {
-    display: flex;
-    height: 120px;
-    width: 150px;
-    margin-top: -5%;
-    margin-left: -40%;
-    animation: movedown 1s linear 1;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    visibility: hidden;
+  display: flex;
+  height: 120px;
+  width: 150px;
+  margin-top: -5%;
+  margin-left: -40%;
+  animation: movedown 1s linear 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
 @keyframes movedown {
-    0% {
-        transform: translateY(-100px);
-        visibility: visible;
-    }
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
 
-    100% {
-        transform: translateY(0);
-        visibility: visible;
-    }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
 }
 
 /*Index image*/
 .profile {
-    grid-area: photos;
-    margin-top: 0%;
-    margin-left: 30%;
-    margin-right: 30%;
-    height: 87%;
-    width: 100%;
-    img {
-        max-height: 100%;
-        max-width: auto;
-        border-radius: 50%;
-        box-shadow: 12px 12px 24px 2px $shadow;
-        animation: zoomin 1s linear 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 2.8s;
-        visibility: hidden;
-    }
+  grid-area: photos;
+  margin-top: 0%;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 87%;
+  width: 100%;
+  img {
+    max-height: 100%;
+    max-width: auto;
+    border-radius: 50%;
+    box-shadow: 12px 12px 24px 2px $shadow;
+    animation: zoomin 1s linear 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.8s;
+    visibility: hidden;
+  }
 
-    @keyframes zoomin {
-        0% {
-            transform: scale(0.5);
-            visibility: visible;
-        }
-        100% {
-            transform: scale(1);
-            visibility: visible;
-        }
+  @keyframes zoomin {
+    0% {
+      transform: scale(0.5);
+      visibility: visible;
     }
+    100% {
+      transform: scale(1);
+      visibility: visible;
+    }
+  }
 }
 
 /*Footer image*/
 footer {
-    div {
-        img {
-            height: 60px;
-            width: 60px;
-            margin-top: 20px;
-            margin-right: 100px;
-            animation: moveright 1s linear 1;
-            animation-delay: 2.7s;
-            animation-fill-mode: forwards;
-            visibility: hidden;
-        }
-
-        @keyframes moveright {
-            0% {
-                transform: translateX(-100px);
-                visibility: visible;
-            }
-
-            100% {
-                transform: translateX(0);
-                visibility: visible;
-            }
-        }
+  div {
+    img {
+      height: 60px;
+      width: 60px;
+      margin-top: 20px;
+      margin-right: 100px;
+      animation: moveright 1s linear 1;
+      animation-delay: 2.7s;
+      animation-fill-mode: forwards;
+      visibility: hidden;
     }
+
+    @keyframes moveright {
+      0% {
+        transform: translateX(-100px);
+        visibility: visible;
+      }
+
+      100% {
+        transform: translateX(0);
+        visibility: visible;
+      }
+    }
+  }
 }
 
 /*About Images*/
 .picture {
-    grid-area: picture;
-    margin-top: 1%;
-    padding-left: 15%;
-    img {
-        height: 80%;
-        width: 90%;
-        border-radius: 50%;
-    }
+  grid-area: picture;
+  margin-top: 1%;
+  padding-left: 15%;
+  img {
+    height: 80%;
+    width: 90%;
+    border-radius: 50%;
+  }
 }
 
 /*Services Images*/
-.col{
-    margin-top: 3%;
-    margin-left: 10%;
-    height: 25rem;
-    width: 20rem;
+.col {
+  margin-top: 3%;
+  margin-left: 10%;
+  height: 25rem;
+  width: 20rem;
 }
 .design {
-    justify-content: center;
-    margin-top: 0%;
-    img {   
-        margin-top: 12%;
-        font-weight: 100;
-        height: 20vh;
-        width: 22vh;
-        border-radius: 50%;
-        overflow: hidden;
-        display: inline-block;
-        transition: 1s ease-in-out;
-        width: 180px;
-      
-        &:hover {
-            transform: scale(1.3);
-            -ms-transform: scale(1.5);
-            /* IE 9 */
-            -moz-transform: scale(1.5);
-            /* Firefox */
-            -webkit-transform: scale(1.5);
-            /* Safari and Chrome */
-            -o-transform: scale(1.5);
-        }
+  justify-content: center;
+  margin-top: 0%;
+  img {
+    margin-top: 12%;
+    font-weight: 100;
+    height: 20vh;
+    width: 22vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    transition: 1s ease-in-out;
+    width: 180px;
+
+    &:hover {
+      transform: scale(1.3);
+      -ms-transform: scale(1.5);
+      /* IE 9 */
+      -moz-transform: scale(1.5);
+      /* Firefox */
+      -webkit-transform: scale(1.5);
+      /* Safari and Chrome */
+      -o-transform: scale(1.5);
     }
+  }
 }

@@ -18,36 +18,16 @@
   font-size: 0.9em;
   line-height: 2.1em;
 }
-
 .contact {
   grid-area: contact2;
   margin-top: 8%;
   margin-left: 5%;
 }
-
 .box1 {
   input {
-  height: 5vh;
-  padding-top: 5%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  font-size: medium;
-  color: $solidcolor;
-  border: none;
-  border-bottom: 1px solid $solidcolor;
-  outline: none;
-  background: transparent;
-}
-}
-.box2 {
-
-  label {
-    margin-top: 4%;
-  }
-
-  input {
+    height: 5vh;
     padding-top: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     font-size: medium;
     color: $solidcolor;
@@ -57,15 +37,29 @@
     background: transparent;
   }
 }
-
+.box2 {
+  label {
+    margin-top: 4%;
+  }
+  input {
+    padding-top: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    color: $solidcolor;
+    border: none;
+    border-bottom: 1px solid $solidcolor;
+    outline: none;
+    background: transparent;
+  }
+}
 .box3 {
   label {
     margin-top: 6%;
   }
-
   input {
     padding-top: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     font-size: medium;
     color: $solidcolor;
@@ -75,16 +69,13 @@
     background: transparent;
   }
 }
-
 .box4 {
-
   label {
     margin-top: 8%;
   }
-
   textarea {
     padding-top: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     font-size: medium;
     color: $solidcolor;

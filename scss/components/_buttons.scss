@@ -6,7 +6,7 @@
   margin-top: 1%;
   margin-left: 20%;
 
-  .btn {
+  & .btn {
     display: flex;
     justify-content: center;
     padding: 10px 50px;
@@ -20,14 +20,12 @@
     &:hover {
       color: $thirdcolor;
       border: 1px solid $thirdcolor;
-      animation: pulsate 4s
+      animation: pulsate 4s;
     }
 
     @keyframes pulsate {
       0% {
-        box-shadow:
-          0 0 25px $thirdcolor,
-          0 0 25px $fourthcolor;
+        box-shadow: 0 0 25px $thirdcolor, 0 0 25px $fourthcolor;
       }
     }
   }
@@ -39,7 +37,6 @@
   margin-left: 20%;
   margin-right: 60%;
 }
-
 .btn2 {
   padding: 10px 50px;
   border: 1px solid $solidcolor;
@@ -56,7 +53,7 @@
 }
 
 /*Portafolio Button*/
-[type=radio] {
+[type="radio"] {
   display: none;
 }
 
@@ -66,7 +63,7 @@
   justify-content: center;
   width: 100%;
   margin-top: 4%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   color: $solidcolor;
   a {
@@ -83,20 +80,18 @@
   margin-left: 55%;
   margin-top: 1%;
   padding: 10px 50px;
-  border: 1px solid $solidcolor;  
+  border: 1px solid $solidcolor;
   border-radius: 30px;
 
   &:hover {
     color: $listservice;
     border: 1px solid $solidbutton;
-    animation: pulsate 4s
+    animation: pulsate 4s;
   }
 }
 
 @keyframes pulsate {
   0% {
-    box-shadow:
-      0 0 25px $listservice,
-      0 0 25px $solidbutton;
+    box-shadow: 0 0 25px $listservice, 0 0 25px $solidbutton;
   }
 }

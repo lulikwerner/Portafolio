@@ -11,31 +11,30 @@
     list-style: none;
     border-radius: 28px;
     box-shadow: 1px 0.5px 0.5px 1px $shadow;
-    li{
-      a{
-      display: flex;
-      justify-content: center;
-      margin: 20px 50px 20px 50px;
-      font-weight: 100;
-      font-size: 1.2em;
-      color: $solidcolor;
-      list-style: none;
-      text-decoration: none;
+    li {
+      a {
+        display: flex;
+        justify-content: center;
+        margin: 20px 50px 20px 50px;
+        font-weight: 100;
+        font-size: 1.2em;
+        color: $solidcolor;
+        list-style: none;
+        text-decoration: none;
 
-      &:hover {
-        color: $thirdcolor;
+        &:hover {
+          color: $thirdcolor;
+        }
       }
     }
-  }
-  
   }
 }
 
 /*Services List*/
-.col{
+.col {
   margin-left: 8%;
 }
-.row{
+.row {
   margin-right: 0%;
 }
 .list-services {
@@ -57,14 +56,14 @@
 
   div {
     p {
-      display: map-get($styles_services,display);
-      justify-content: map-get($styles_services,j-content);
-      text-align: map-get($styles_services,t-align);
+      display: map-get($styles_services, display);
+      justify-content: map-get($styles_services, j-content);
+      text-align: map-get($styles_services, t-align);
       width: 100%;
       margin-top: 15%;
       margin-left: 0%;
-      font-size: map-get($styles_services,f-size);
-      color: map-get($styles_services,color);
+      font-size: map-get($styles_services, f-size);
+      color: map-get($styles_services, color);
 
       &:hover {
         color: $listservice;
@@ -81,6 +80,6 @@
     font-size: 2em;
   }
 }
-.hig{
+.hig {
   margin-top: 0%;
 }

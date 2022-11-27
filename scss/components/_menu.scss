@@ -1,13 +1,10 @@
 /*Menu*/
 .menu {
-
   display: flex;
   li {
     padding-left: 30px;
     float: left;
-
   }
-
   a {
     display: block;
     position: relative;
@@ -21,73 +18,59 @@
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: hidden;
- 
 
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $solidcolor;
+      transition: 0.3s ease-in-out;
+    }
 
-  &:after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $solidcolor;
-    transition: 0.30s ease-in-out;
-  }
-
-  &:hover {
-    color: $solidcolor;
- &:after {
-    width: 100%;
-    color: $solidcolor;
+    &:hover {
+      color: $solidcolor;
+      &:after {
+        width: 100%;
+        color: $solidcolor;
+      }
+    }
   }
 }
-} 
-}
-  
-.submenu{
+.submenu {
   display: flex;
   li {
     padding-left: 30px;
     float: left;
-
   }
 }
-
-.dropdown_menu{
+.dropdown_menu {
   display: none;
-  
 }
-.submenu:hover
-.dropdown_menu{
+.submenu:hover .dropdown_menu {
   cursor: pointer;
   display: block;
   position: absolute;
- 
-
-
-  ul{
+  ul {
     display: flex;
     flex-direction: column;
-   height: 70%;
-   margin-top: -5%;
- 
-    li{
+    height: 70%;
+    margin-top: -5%;
+    li {
       overflow: hidden;
-      a{
+      a {
         text-align: left;
-       
-
         &:after {
           width: auto;
+        }
+        &:hover {
+          color: $solidcolor;
+        }
       }
-      &:hover {
-        color: $solidcolor;
-
     }
-    }
-    }
-  } 
+  }
 }
 
 .open-menu,
@@ -97,20 +80,19 @@
   color: $listservice;
   font-size: 1.5rem;
 }
-
 .open-menu {
-  ul{
-    li{
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}}}
-
+  ul {
+    li {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}
 .close-menu {
   top: 57px;
   right: 22px;
 }
-
 #check {
   display: none;
 }
