@@ -12,8 +12,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   color: aquamarine;
-  background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
-    url("../assets/img/back8.png");
+  background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url("../assets/img/back8.png");
   background-position: center;
   background-size: cover;
   overflow: scroll;
@@ -105,7 +104,6 @@ footer {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-  -webkit-animation: moveright 1s linear 1;
   animation: moveright 1s linear 1;
 }
 
@@ -120,22 +118,9 @@ footer {
   padding: 5%;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  -webkit-animation: slideleft 1s linear forwards;
   animation: slideleft 1s linear forwards;
-  -webkit-animation-delay: 1.6s;
   animation-delay: 1.6s;
   visibility: hidden;
-}
-
-@-webkit-keyframes slideleft {
-  0% {
-    transform: translateX(-100px);
-    visibility: visible;
-  }
-  100% {
-    transform: translatex(0);
-    visibility: visible;
-  }
 }
 
 @keyframes slideleft {
@@ -163,11 +148,8 @@ footer {
   border: 1px solid #fff;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 12px 12px 24px 2px rgba(79, 209, 197, 0.64);
-  -webkit-animation: zoomin 1s linear 1s;
   animation: zoomin 1s linear 1s;
-  -webkit-animation-delay: 2s;
   animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   visibility: hidden;
 }
@@ -182,7 +164,6 @@ footer {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  -webkit-animation: moveright 4s linear;
   animation: moveright 4s linear;
 }
 
@@ -203,11 +184,8 @@ footer {
   color: #30c4ab;
   text-decoration: none;
   list-style: none;
-  -webkit-animation: movedown 1s linear 1;
   animation: movedown 1s linear 1;
-  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   visibility: hidden;
 }
@@ -310,13 +288,7 @@ footer {
 .wrap .btn:hover {
   color: #ab3ea6;
   border: 1px solid #ab3ea6;
-  -webkit-animation: pulsate 4s;
   animation: pulsate 4s;
-}
-@-webkit-keyframes pulsate {
-  0% {
-    box-shadow: 0 0 25px #ab3ea6, 0 0 25px #5a0c59;
-  }
 }
 @keyframes pulsate {
   0% {
@@ -333,21 +305,23 @@ footer {
 
 .btn2 {
   padding: 10px 50px;
+  padding-right: 110%;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid #fff;
   border-radius: 30px;
   text-decoration: none;
   width: 53%;
+  background-color: transparent;
   color: #fff;
 }
 .btn2:hover {
   color: #ab3ea6;
   border: 1px solid #ab3ea6;
-  -webkit-animation: pulsate 4s;
   animation: pulsate 4s;
 }
 
 /*Portafolio Button*/
-[type="radio"] {
+[type=radio] {
   display: none;
 }
 
@@ -380,7 +354,6 @@ footer {
 .about-btn:hover {
   color: #43d0b8;
   border: 1px solid #30c4ab;
-  -webkit-animation: pulsate 4s;
   animation: pulsate 4s;
 }
 
@@ -396,24 +369,10 @@ footer {
   width: 150px;
   margin-top: -5%;
   margin-left: -40%;
-  -webkit-animation: movedown 1s linear 1;
   animation: movedown 1s linear 1;
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   visibility: hidden;
-}
-
-@-webkit-keyframes movedown {
-  0% {
-    transform: translateY(-100px);
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(0);
-    visibility: visible;
-  }
 }
 
 @keyframes movedown {
@@ -440,23 +399,10 @@ footer {
   max-width: auto;
   border-radius: 50%;
   box-shadow: 12px 12px 24px 2px rgba(79, 209, 197, 0.64);
-  -webkit-animation: zoomin 1s linear 1s;
   animation: zoomin 1s linear 1s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s;
   visibility: hidden;
-}
-@-webkit-keyframes zoomin {
-  0% {
-    transform: scale(0.5);
-    visibility: visible;
-  }
-  100% {
-    transform: scale(1);
-    visibility: visible;
-  }
 }
 @keyframes zoomin {
   0% {
@@ -475,23 +421,10 @@ footer div img {
   width: 60px;
   margin-top: 20px;
   margin-right: 100px;
-  -webkit-animation: moveright 1s linear 1;
   animation: moveright 1s linear 1;
-  -webkit-animation-delay: 2.7s;
   animation-delay: 2.7s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   visibility: hidden;
-}
-@-webkit-keyframes moveright {
-  0% {
-    transform: translateX(-100px);
-    visibility: visible;
-  }
-  100% {
-    transform: translateX(0);
-    visibility: visible;
-  }
 }
 @keyframes moveright {
   0% {
@@ -654,18 +587,7 @@ footer div img {
 .list-services {
   width: 100%;
   height: 50vh;
-  -webkit-animation: moveright2 4s linear 1;
   animation: moveright2 4s linear 1;
-}
-@-webkit-keyframes moveright2 {
-  0% {
-    transform: translateX(-50px);
-    visibility: visible;
-  }
-  100% {
-    transform: translateX(0);
-    visibility: visible;
-  }
 }
 @keyframes moveright2 {
   0% {
@@ -895,7 +817,7 @@ footer div img {
   color: #fff;
   border-radius: 10px;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .front-face img {
   width: 100%;
@@ -913,13 +835,7 @@ footer div img {
 
 .animated {
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    aquamarine 0%,
-    yellow 29%,
-    #b724af 67%,
-    #43d0b8 100%
-  );
+  background-image: linear-gradient(-225deg, aquamarine 0%, yellow 29%, #b724af 67%, #43d0b8 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -927,15 +843,8 @@ footer div img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: textclip 3s linear infinite;
   animation: textclip 3s linear infinite;
   display: inline-block;
-}
-
-@-webkit-keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
 }
 
 @keyframes textclip {
@@ -945,7 +854,7 @@ footer div img {
 }
 .back-face {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   background-color: rgb(33, 228, 219);
   color: yellow;
   position: absolute;
@@ -973,7 +882,7 @@ footer div img {
 
 .front-face {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .front-face img {
   width: 100%;
@@ -982,12 +891,12 @@ footer div img {
 
 .centered {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .back-face-p {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   color: #ab3ea6;
   position: absolute;
   height: 31vh;
@@ -1960,7 +1869,7 @@ footer div img {
   .wrap {
     margin-top: 0%;
     -o-object-position: center;
-    object-position: center;
+       object-position: center;
     width: 80%;
   }
   .wrap .btn {
@@ -2059,4 +1968,4 @@ footer div img {
   .col div h5 {
     font-size: 1rem;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

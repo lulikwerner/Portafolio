@@ -149,6 +149,6 @@
     border: 1px solid $colorp;
   }
 }
-.cardp:hover & .card-inner {
+.cardp:hover .card-inner {
   transform: rotateY(-180deg);
 }

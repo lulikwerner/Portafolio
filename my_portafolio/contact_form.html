@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Get to know me better and let's start
             this wodnerful journy together">
     <meta name="description" content=" For any inquyries please contact me">
     <meta name="keywords" content="Contact, Work , Quote, Hire">
-
+ 
+ 
 
     <title>Contact Form</title>
     <link rel="icon" href="../assets/img/unicorn.svg">
@@ -37,7 +39,7 @@
                                 <div class="dropdown_menu">
                                     <ul>
                                         <li><a href="./pyth.html">Python</a></li>
-                                        <li><a href="./web_developer.html">Web
+                                        <li><a  href="./web_developer.html">Web
                                                 developer</a></li>
                                     </ul>
                                 </div>
@@ -65,29 +67,32 @@
                         you might even recive a response the same day
                     </p>
                 </div>
-                <div class="contact">
-                    <form>
+                <div class="contact" >
+                    <form id="my-form">
                         <div class="box1">
                             <label> Enter your Name</label>
-                            <input type="text" name="name">
+                            <input  type="text" name="name" id ="nameInput">
                         </div>
                         <div class="box2">
                             <label> Email Address</label>
-                            <input type="text" name="ename">
+                            <input type="text" name="enameInput" id="enameInput">
                         </div>
                         <div class="box3">
                             <label>Subject</label>
-                            <input type="text" name="sname">
+                            <input type="text" name="sname" id="subjectInput">
                         </div>
                         <div class="box4">
                             <label> Write a message</label>
-                            <textarea name="message" rows="5"></textarea>
+                            <textarea name="message" rows="5" id="messageInput"></textarea>
                         </div>
                         <div class="wrap4">
-                            <a href="" class="btn2" class="slide-left">SEND</a>
+                             <button type= "submit"class="btn2" class="about-btn" class="slide-left">SEND</button>
                         </div>
                     </form>
                 </div>
+
+   
+                  
         </main>
         <footer>
             <div>
@@ -100,6 +105,11 @@
             </div>
         </footer>
     </div>
+    <script type="module">
+  
+      </script>
+    
+    <script  type="module" src="../src/Firebase/config.js"></script>
 </body>
 
 </html>

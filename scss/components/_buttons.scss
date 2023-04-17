@@ -39,11 +39,15 @@
 }
 .btn2 {
   padding: 10px 50px;
+  padding-right: 110%;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid $solidcolor;
   border-radius: 30px;
   text-decoration: none;
   width: 53%;
+  background-color: transparent;
   color: $solidcolor;
+  
 
   &:hover {
     color: $thirdcolor;
